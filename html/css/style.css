@@ -120,6 +120,12 @@ body {
     left: 74px;
     position: relative;
     top: 30px;
-    width: 588px;
+    width: 630px;
     line-height: 14px;
+}
+
+.read_more_news {
+    position:absolute;
+    bottom:17px;
+    right:49px;
 }
