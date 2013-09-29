@@ -78,6 +78,53 @@ body {
 
 }
 
+.ship_content {
+    position: relative;
+    height:403px;
+    width: 998px;
+
+}
+.btns_content {
+
+    height: 364px;
+    margin-left: -30px;
+    position: relative;
+    width: 1061px;
+
+}
+
+.btns_content  a.btn_faq {
+    background: url("../img/btn/faq.png") repeat scroll left top rgba(0, 0, 0, 0);
+    display: block;
+    height: 210px;
+    left: 17px;
+    position: absolute;
+    top: 90px;
+    width: 494px;
+}
+
+
+.btns_content  a.btn_faq:hover {
+    background-position: bottom left;
+
+}
+
+.btns_content  a.btn_forum{
+    background: url("../img/btn/forum.png") repeat scroll left top rgba(0, 0, 0, 0);
+    display: block;
+    height: 210px;
+    right: 17px;
+    position: absolute;
+    top: 90px;
+    width: 494px;
+}
+
+
+.btns_content  a.btn_forum:hover {
+    background-position: bottom left;
+
+}
+
 .news_block {
     position: relative;
     height:220px;
