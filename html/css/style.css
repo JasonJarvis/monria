@@ -24,6 +24,11 @@ body {
     top: 627px;
     background: transparent url(../img/menu/menu.png) no-repeat scroll center top;
 }
+.navigation.is-fixed {
+position: fixed;
+top: -30px;
+z-index: 1000;
+}
 
 .navigation .bar {
     width: 1030px;
@@ -154,9 +159,11 @@ body {
 }
 
 .news_block .img_wrapper img {
+    float: left;
+    left: 17px;
     position: absolute;
+    top: 18px;
     z-index: 1;
-    float:left;
 }
 
 .news_block .text_wrapper {
