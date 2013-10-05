@@ -69,26 +69,72 @@ z-index: 1000;
     text-align:center;
 }
 
+.navigation .bar a:hover {
+    background: transparent url(../img/menu/menu.png) no-repeat;
+}
 .navigation .bar a.home {
     width:117px;
 }
+
+.navigation .bar a.home:hover {
+
+    background-position: -445px -160px;
+}
+
 .navigation .bar a.download {
     width:141px;
 }
+
+.navigation .bar a.download:hover {
+
+    background-position:-566px -160px;
+}
+
+
 .navigation .bar a.forum {
     width:100px;
 }
+.navigation .bar a.forum:hover {
+
+    background-position:-711px -160px;
+}
+
+
 .navigation .bar a.login {
     width:275px;
 }
+
+.navigation .bar a.login:hover {
+
+    background-position:-815px -160px;
+}
+
+
 .navigation .bar a.guide {
     width:118px;
 }
+
+.navigation .bar a.guide:hover {
+
+    background-position:-1094px -160px;
+}
+
+
 .navigation .bar a.media {
     width:129px;
 }
+
+.navigation .bar a.media:hover {
+
+    background-position:-1216px -160px ;
+}
+
 .navigation .bar a.about {
     width:115px;
+}
+.navigation .bar a.about:hover {
+
+    background-position:-1349px -160px ;
 }
 
 

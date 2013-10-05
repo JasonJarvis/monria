@@ -17,6 +17,18 @@ $(function () {
     }
 
     $("#task_bar").jScroll({top: 150});
+
+    $(".navigation a").hover (
+        function() {
+
+            $(this).css("opacity" ,0);
+
+            $(this).stop().animate({"opacity":1});
+        },
+        function() {
+            $(this).stop().animate({"opacity":0});
+        }
+    );
 });
 
 
