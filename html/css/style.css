@@ -9,6 +9,7 @@ body {
 }
 
 .bg1 {
+
     position: absolute;
     width: 100%;
     height: 652px;
@@ -40,7 +41,7 @@ body {
     width: 100%;
     height: 220px;
     z-index: 100;
-    top: 627px;
+    top: 619px;
     background: transparent url(../img/menu/menu.png) no-repeat scroll center top;
 }
 .navigation.is-fixed {
@@ -74,12 +75,22 @@ z-index: 1000;
 
 #flashContent {
 
-    margin-left: 133px;
-    position: absolute;
-    top: -3px;
+width:100%;
+    overflow: hidden;
+    position: relative;
     z-index: 10;
 
+    height: 652px;
+
 }
+
+#flashBox {
+    left: 129px;
+    position: relative;
+    top: -2px;
+
+}
+
 
 
 .content {

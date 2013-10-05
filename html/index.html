@@ -8,6 +8,13 @@
     <script src="js/jquery-1.10.2.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/analytics.js" async=""></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <script type="text/javascript">
+        var params = { menu: "false", wmode:"transparent", allowScriptAccess:"always" };
+
+        swfobject.embedSWF("img/monria1.swf", "flashReplace", "1324", "653", "9.0.0", "js/expressInstall.swf",'',params);
+    </script>
+
     <script> <!-- Google Analytics -->
     (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -27,41 +34,7 @@
 
 
 <div class="gamecontent_reposition">
-    <div id="flashContent">
-        <object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1325" height="655" id="img/monria.swf" align="middle">
-            <param name="movie" value="img/monria.swf" />
-            <param name="quality" value="high" />
 
-            <param name="play" value="true" />
-            <param name="loop" value="true" />
-            <param name="wmode" value="transparent" />
-            <param name="scale" value="showall" />
-            <param name="menu" value="true" />
-            <param name="devicefont" value="false" />
-            <param name="salign" value="" />
-            <param name="allowScriptAccess" value="sameDomain" />
-            <!--[if !IE]>-->
-            <object type="application/x-shockwave-flash" data="img/monria.swf" width="1325" height="655">
-                <param name="movie" value="img/monria.swf" />
-                <param name="quality" value="high" />
-
-                <param name="play" value="true" />
-                <param name="loop" value="true" />
-                <param name="wmode" value="transparent" />
-                <param name="scale" value="showall" />
-                <param name="menu" value="true" />
-                <param name="devicefont" value="false" />
-                <param name="salign" value="" />
-                <param name="allowScriptAccess" value="sameDomain" />
-                <!--<![endif]-->
-                <a href="http://www.adobe.com/go/getflash">
-                    <img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-                </a>
-                <!--[if !IE]>-->
-            </object>
-            <!--<![endif]-->
-        </object>
-    </div>
     <div class="navigation">
 
         <div class="bar">
@@ -74,7 +47,15 @@
         </div>
 
     </div>
-    <div class="bg1"></div>
+    <div class="bg1">
+        <div id="flashContent" >
+            <div id="flashBox">
+                <div id="flashReplace"></div>
+
+            </div>
+        </div>
+
+    </div>
     <div class="bg2"></div>
     <div class="bg3"></div>
     <div class="content">
