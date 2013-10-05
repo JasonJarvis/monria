@@ -238,3 +238,42 @@ width:100%;
     background-position: bottom left;
 }
 
+#task_bar {
+    display: block;
+    left: -4px;
+    padding-bottom: 9px;
+    padding-top: 5px;
+    position: absolute;
+    top: 985px;
+    width: 100px;
+    z-index: 30;
+}
+
+#youtube, #youtube:hover, #facebook, #facebook:hover, #twitter, #twitter:hover {
+    background: url("../img/btn/social.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    width: 100px;
+}
+#youtube {
+    background-position:-6px -144px;
+    height: 79px;
+    width: 93px;
+}
+#youtube:hover {
+    background-position: -138px -144px;
+}
+#facebook {
+    background-position: -6px -6px;
+    height: 137px;
+    width: 93px;
+}
+#facebook:hover {
+    background-position:-138px -6px;
+}
+#twitter {
+    background-position: -6px -224px;
+    height: 147px;
+    width: 94px;
+}
+#twitter:hover {
+    background-position: -138px -224px;
+}
