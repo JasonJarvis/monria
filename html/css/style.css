@@ -39,20 +39,20 @@ body {
 .navigation {
     position: absolute;
     width: 100%;
-    height: 220px;
+    height: 145px;
     z-index: 100;
-    top: 619px;
+    top: 617px;
     background: transparent url(../img/menu/menu.png) no-repeat scroll center top;
 }
 .navigation.is-fixed {
 position: fixed;
-top: -30px;
+top: -35px;
 z-index: 1000;
 }
 
 .navigation .bar {
     width: 1030px;
-    height:220px;
+    height: 145px;
     margin: 0 auto;
     line-height:251px;
 
@@ -64,9 +64,33 @@ z-index: 1000;
     font-family: tahoma;
     font-size:23px;
     width:168px;
+    height:100px;
     display:inline-block;
     text-align:center;
 }
+
+.navigation .bar a.home {
+    width:117px;
+}
+.navigation .bar a.download {
+    width:141px;
+}
+.navigation .bar a.forum {
+    width:100px;
+}
+.navigation .bar a.login {
+    width:275px;
+}
+.navigation .bar a.guide {
+    width:118px;
+}
+.navigation .bar a.media {
+    width:129px;
+}
+.navigation .bar a.about {
+    width:115px;
+}
+
 
 .navigation .bar a:hover {
     color:white;
