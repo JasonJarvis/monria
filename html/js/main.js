@@ -15,6 +15,8 @@ $(function () {
     function attachNav() {
         nav.toggleClass('is-fixed');
     }
+
+    $("#task_bar").jScroll({top: 200});
 });
 
 
