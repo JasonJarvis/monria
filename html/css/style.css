@@ -14,7 +14,7 @@ body {
     width: 100%;
     height: 652px;
     background: transparent url(../img/bg/bg_top.jpg) no-repeat scroll center top;
-    z-index: 1;
+    z-index: 3;
 }
 
 .bg2 {
@@ -85,13 +85,15 @@ width:100%;
 }
 
 #flashBox {
-    left: 129px;
+    left: 50%;
     position: relative;
     top: -2px;
 
 }
 
-
+#flashObj {
+    margin-left:-660px;
+}
 
 .content {
     height: 168px;
@@ -244,9 +246,9 @@ width:100%;
     padding-bottom: 9px;
     padding-top: 5px;
     position: absolute;
-    top: 985px;
+    top: 0px;
     width: 100px;
-    z-index: 30;
+    z-index: 2;
 }
 
 #youtube, #youtube:hover, #facebook, #facebook:hover, #twitter, #twitter:hover {

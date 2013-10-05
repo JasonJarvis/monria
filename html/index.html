@@ -6,13 +6,14 @@
     <link rel="stylesheet" type="text/css" href="css/reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="js/jquery.jscroll.js"></script>
     <script src="js/main.js"></script>
     <script src="js/analytics.js" async=""></script>
     <script type="text/javascript" src="js/swfobject.js"></script>
     <script type="text/javascript">
         var params = { menu: "false", wmode:"transparent", allowScriptAccess:"always" };
 
-        swfobject.embedSWF("img/monria1.swf", "flashReplace", "1324", "653", "9.0.0", "js/expressInstall.swf",'',params);
+        swfobject.embedSWF("img/monria1.swf", "flashObj", "1324", "653", "9.0.0", "js/expressInstall.swf",'',params);
     </script>
 
     <script> <!-- Google Analytics -->
@@ -54,7 +55,7 @@
     <div class="bg1">
         <div id="flashContent" >
             <div id="flashBox">
-                <div id="flashReplace"></div>
+                <div id="flashObj"></div>
 
             </div>
         </div>
