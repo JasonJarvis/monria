@@ -11,10 +11,29 @@ body {
 .bg1 {
     position: absolute;
     width: 100%;
-    height: 3000px;
-    background: transparent url(../img/bg/background.jpg) no-repeat scroll center top;
+    height: 652px;
+    background: transparent url(../img/bg/bg_top.jpg) no-repeat scroll center top;
     z-index: 1;
 }
+
+.bg2 {
+    position: absolute;
+    width: 100%;
+    height: 1372px;
+    background: transparent url(../img/bg/bg_midle.jpg) no-repeat scroll center top;
+    z-index: 1;
+    top:653px;
+}
+
+.bg3 {
+    position: absolute;
+    width: 100%;
+    height: 976px;
+    background: transparent url(../img/bg/bg_footer.jpg) no-repeat scroll center top;
+    z-index: 1;
+    top:2025px;
+}
+
 
 .navigation {
     position: absolute;
