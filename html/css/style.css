@@ -202,6 +202,11 @@ width:100%;
     width: 998px;
 
 }
+.ship_content img {
+    left: 656px;
+    position: absolute;
+    top: 78px;
+}
 .btns_content {
 
     height: 364px;
