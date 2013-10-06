@@ -78,7 +78,7 @@ z-index: 1000;
 
 .navigation .bar a.home:hover {
 
-    background-position: -445px -160px;
+    background-position: -445px -161px;
 }
 
 .navigation .bar a.download {
@@ -87,7 +87,7 @@ z-index: 1000;
 
 .navigation .bar a.download:hover {
 
-    background-position:-566px -160px;
+    background-position:-567px -161px;
 }
 
 
@@ -96,7 +96,7 @@ z-index: 1000;
 }
 .navigation .bar a.forum:hover {
 
-    background-position:-711px -160px;
+    background-position:-714px -161px;
 }
 
 
@@ -106,7 +106,7 @@ z-index: 1000;
 
 .navigation .bar a.login:hover {
 
-    background-position:-815px -31px;
+    background-position:-819px -161px;
 }
 
 
@@ -116,7 +116,7 @@ z-index: 1000;
 
 .navigation .bar a.guide:hover {
 
-    background-position:-1094px -160px;
+    background-position:-1100px -161px;
 }
 
 
@@ -126,7 +126,7 @@ z-index: 1000;
 
 .navigation .bar a.media:hover {
 
-    background-position:-1216px -160px ;
+    background-position:-1224px -161px ;
 }
 
 .navigation .bar a.about {
@@ -134,7 +134,7 @@ z-index: 1000;
 }
 .navigation .bar a.about:hover {
 
-    background-position:-1349px -160px ;
+    background-position:-1358px -161px ;
 }
 
 
@@ -366,11 +366,10 @@ width:100%;
 .top_register,  .top_download{
 
     border-image-width: 31px 31px 31px 31px;
-    height: 251px;
+    height: 232px;
 
     position: absolute;
-
-    width: 511px;
+    width: 472px;
 
      /*IE 8 */
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
@@ -385,15 +384,15 @@ width:100%;
 }
 .top_register {
     background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-    left: 49px;
-    top: 37px;
+    left: 41px;
+    top: 41px;
 }
 
 .top_download{
     background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
     top: 38px;
-    left: -555px;
-    top: 38px;
+    left: -505px;
+    top: 40px;
 }
 
 .ship_content a {
