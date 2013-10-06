@@ -395,3 +395,16 @@ width:100%;
     top: 38px;
 }
 
+.ship_content a {
+    background: url("../img/btn/more.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 25px;
+    position: absolute;
+    right: -22px;
+    top: 311px;
+    width: 367px;
+}
+.ship_content a:hover {
+
+    background-position:  bottom left;
+}
