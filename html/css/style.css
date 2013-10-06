@@ -20,7 +20,7 @@ body {
 .bg2 {
     position: absolute;
     width: 100%;
-    height: 1372px;
+    height: 1268px;
     background: transparent url(../img/bg/bg_midle.jpg) no-repeat scroll center top;
     z-index: 1;
     top:653px;
@@ -32,7 +32,7 @@ body {
     height: 976px;
     background: transparent url(../img/bg/bg_footer.jpg) no-repeat scroll center top;
     z-index: 1;
-    top:2025px;
+    top:1921px;
 }
 
 
@@ -171,7 +171,7 @@ width:100%;
     left: 50%;
     margin-left: -499px;
     position: absolute;
-    top: 830px;
+    top: 755px;
     width: 998px;
     z-index: 50;
 }
@@ -229,7 +229,7 @@ width:100%;
     height: 210px;
     left: 17px;
     position: absolute;
-    top: 90px;
+    top: 67px;
     width: 494px;
 }
 
@@ -245,7 +245,7 @@ width:100%;
     height: 210px;
     right: 17px;
     position: absolute;
-    top: 90px;
+    top: 67px;
     width: 494px;
 }
 
