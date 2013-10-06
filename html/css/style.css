@@ -146,7 +146,7 @@ z-index: 1000;
 #flashContent {
 
 width:100%;
-    overflow: hidden;
+
     position: relative;
     z-index: 10;
 
@@ -158,6 +158,7 @@ width:100%;
     left: 50%;
     position: relative;
     top: -2px;
+    overflow: visible;
 
 }
 
@@ -188,11 +189,17 @@ width:100%;
     width: 116px;
 }
 
+.reposition {
+    padding-top:112px;
+
+
+}
+
 .news_content {
     position: relative;
     height:680px;
     width: 998px;
-    margin-top:112px;
+
 
 }
 
