@@ -361,3 +361,37 @@ width:100%;
 #twitter:hover {
     background-position: -138px -224px;
 }
+
+.top_register,  .top_download{
+
+    border-image-width: 31px 31px 31px 31px;
+    height: 251px;
+
+    position: absolute;
+
+    width: 511px;
+
+     /*IE 8 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+     /*IE 5-7 */
+    filter: alpha(opacity=0);
+     /*Netscape */
+    -moz-opacity: 0;
+     /*Safari 1.x */
+    -khtml-opacity: 0;
+     /*Good browsers */
+    opacity: 0;
+}
+.top_register {
+    background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    left: 49px;
+    top: 37px;
+}
+
+.top_download{
+    background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    top: 38px;
+    left: -555px;
+    top: 38px;
+}
+
