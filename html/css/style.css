@@ -1,6 +1,7 @@
 body {
     width: 100%;
     font-family: Verdana,sans-serif;
+    background: black;
 }
 
 .gamecontent_reposition {
@@ -225,23 +226,23 @@ width:100%;
 }
 
 .btns_content  a.btn_faq {
-    background: url("../img/btn/faq.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
     display: block;
     height: 210px;
     left: 17px;
     position: absolute;
     top: 67px;
-    width: 494px;
+    width: 488px;
 }
 
 
 .btns_content  a.btn_faq:hover {
-    background-position: bottom left;
+    background-position: -782px -277px;
 
 }
 
 .btns_content  a.btn_forum{
-    background: url("../img/btn/forum.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
     display: block;
     height: 210px;
     right: 22px;
@@ -252,7 +253,7 @@ width:100%;
 
 
 .btns_content  a.btn_forum:hover {
-    background-position: bottom left;
+    background-position: -770px -32px;
 
 }
 

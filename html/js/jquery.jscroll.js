@@ -72,7 +72,7 @@
 
     // Public: Default values
     $.fn.jScroll.defaults = {
-        speed	:	"slow",
+        speed	:	1000,
 		top		:	10
     };
 
