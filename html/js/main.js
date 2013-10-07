@@ -55,7 +55,31 @@ $(function () {
         }
     );
 
+    $(".btns_content a").hover(
+        function () {
 
+            $(this).css("opacity", 0);
+
+            $(this).stop().animate({"opacity": 1});
+        },
+        function () {
+            $(this).stop().animate({"opacity": 0});
+        }
+    );
+
+
+// Video header
+    if (!Browser.isIE(6) && !Browser.isIE(7) && !Browser.isIE(8)) {
+        var videoHeader = BgVideo.build("#flashObj", {
+            sources: {
+
+                'default': {
+                    'webm': 'videos/monria.mp4',
+                    'mp4': 'videos/monria.mp4'
+                }
+            }
+        });
+    }
 
 });
 

@@ -44,7 +44,13 @@ body {
     z-index: 100;
     top: 617px;
     background: transparent url(../img/menu/menu.png) no-repeat scroll center top;
+    padding:0px;
+    margin:0px;
 }
+.navigation a {
+
+}
+
 .navigation.is-fixed {
 position: fixed;
 top: -35px;
@@ -56,18 +62,24 @@ z-index: 1000;
     height: 145px;
     margin: 0 auto;
     line-height:251px;
+    position: relative;
 
 }
 
 .navigation .bar a {
-    color:#01b5f0;
-    text-decoration: none;
+    display: block;
+
     font-family: tahoma;
-    font-size:23px;
-    width:168px;
-    height:100px;
-    display:inline-block;
-    text-align:center;
+    font-size: 23px;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+    padding-left: 0;
+    position: absolute;
+    text-align: center;
+    text-decoration: none;
+    top: 32px;
+
 }
 
 .navigation .bar a:hover {
@@ -75,6 +87,8 @@ z-index: 1000;
 }
 .navigation .bar a.home {
     width:117px;
+    left:0px;
+
 }
 
 .navigation .bar a.home:hover {
@@ -84,6 +98,8 @@ z-index: 1000;
 
 .navigation .bar a.download {
     width:141px;
+    left:122px;
+
 }
 
 .navigation .bar a.download:hover {
@@ -94,6 +110,7 @@ z-index: 1000;
 
 .navigation .bar a.forum {
     width:100px;
+    left:269px;
 }
 .navigation .bar a.forum:hover {
 
@@ -103,6 +120,7 @@ z-index: 1000;
 
 .navigation .bar a.login {
     width:275px;
+    left:374px;
 }
 
 .navigation .bar a.login:hover {
@@ -113,6 +131,7 @@ z-index: 1000;
 
 .navigation .bar a.guide {
     width:118px;
+    right:257px;
 }
 
 .navigation .bar a.guide:hover {
@@ -123,6 +142,7 @@ z-index: 1000;
 
 .navigation .bar a.media {
     width:129px;
+    right:122px;
 }
 
 .navigation .bar a.media:hover {
@@ -132,6 +152,7 @@ z-index: 1000;
 
 .navigation .bar a.about {
     width:115px;
+    right:3px;
 }
 .navigation .bar a.about:hover {
 
