@@ -60,7 +60,7 @@
 				
 				if ($window.scrollTop() >= this.min) {
 					margin = margin + opts.top + $window.scrollTop() - this.min;
-                    console.log($window.scrollTop() );
+
                 }
 
 
