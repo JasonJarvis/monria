@@ -29,7 +29,7 @@ $(function () {
         nav.toggleClass('is-fixed');
     }
 
-    $("#task_bar").jScroll({top: 380});
+    $("#task_bar").jScroll({top: 360});
 
     $(".navigation a").hover(
         function () {
