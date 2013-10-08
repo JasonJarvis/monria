@@ -385,7 +385,8 @@ width:100%;
     background-position: -138px -224px;
 }
 
-.top_register,  .top_download{
+
+.top_register,  .top_download, .card_left, .card_middle, .card_right{
 
     border-image-width: 31px 31px 31px 31px;
     height: 232px;
@@ -415,6 +416,53 @@ width:100%;
     top: 38px;
     left: -505px;
     top: 40px;
+}
+
+.card_left {
+    background: url("../img/btn/hovers.png") repeat scroll 5px 168px rgba(0, 0, 0, 0);
+    height: 166px;
+    left: -363px;
+    top: 488px;
+    width: 252px;
+
+}
+
+.card_left_span, .card_middle_span, .card_right_span {
+    color: #FFFFFF;
+    display: block;
+    font: bold 17px/22px "Palatino Linotype";
+    left: -252px;
+    margin-top: 130px;
+    position: absolute;
+    text-shadow: 0 0 4px #000000, 0 0 8px #000000;
+    top: 479px;
+}
+
+.card_middle_span {
+    left: -20px;
+    top: 478px;
+}
+
+.card_right_span {
+    left: 193px;
+    top: 479px;
+}
+
+.card_middle {
+    background: url("../img/btn/hovers.png") repeat scroll -253px 187px rgba(0, 0, 0, 0);
+    height: 166px;
+    left: -110px;
+    top: 469px;
+    width: 235px;
+
+}
+
+.card_right {
+    background: url("../img/btn/hovers.png") repeat scroll -493px 168px rgba(0, 0, 0, 0);
+    height: 166px;
+    left: 125px;
+    top: 488px;
+    width: 252px;
 }
 
 .ship_content a {
