@@ -377,7 +377,7 @@ width:100%;
     position: absolute;
     top: 0px;
     width: 100px;
-    z-index: 2;
+    z-index: 1000;
 }
 
 #youtube, #youtube:hover, #facebook, #facebook:hover, #twitter, #twitter:hover {
