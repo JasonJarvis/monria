@@ -186,9 +186,14 @@ width:100%;
 }
 
 #flashObj {
-    margin-left:-660px;
+    margin-left:-2px;
 }
 
+#video_container {
+    margin-left: -658px;
+    overflow: hidden;
+    width: 1315px;
+}
 .content {
     height: 168px;
     left: 50%;
@@ -504,3 +509,4 @@ div#footer a{
 div#footer a:hover {
     text-decoration: underline;
 }
+
