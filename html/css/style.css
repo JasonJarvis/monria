@@ -1,17 +1,27 @@
+html {
+    height:100%;
+    min-width:1160px;
+}
+
 body {
     width: 100%;
     font-family: Verdana,sans-serif;
     background: black;
 }
-
+:focus {
+    outline:0;
+}
 .gamecontent_reposition {
+    margin: 0 auto;
+
     position: relative;
     width: 100%;
 }
 
+
 .bg1 {
 
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 652px;
     background: transparent url(../img/bg/bg_top.jpg) no-repeat scroll center top;
@@ -47,6 +57,14 @@ body {
     padding:0px;
     margin:0px;
 }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    .navigation,.bg1 ,.bg2, .bg3 {
+        background-position: 49.999% top;
+    }
+
+}
+
 .navigation a {
 
 }
@@ -173,6 +191,7 @@ width:100%;
     z-index: 10;
 
     height: 652px;
+    overflow: hidden;
 
 }
 
