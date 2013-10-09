@@ -74,7 +74,7 @@ $(function () {
             sources: {
 
                 'default': {
-                    'webm': 'videos/monria.mp4',
+                    'webm': 'videos/monria.webm',
                     'mp4': 'videos/monria.mp4'
                 }
             }
@@ -151,23 +151,15 @@ var BgVideo = {
         var width, source = null;
 // If browser supports matchMedia
         if (window.matchMedia) {
-            if (window.matchMedia("(max-width: 1160px)").matches) {
-                source = this.sources['1160'][this.playFormat];
-            } else if (window.matchMedia("(max-width: 1280px)").matches) {
-                source = this.sources['1280'][this.playFormat];
-            } else {
+
                 source = this.sources['default'][this.playFormat];
-            }
+
 // specific catch for IE9 which supports HTML5 video, but not matchMedia
         } else {
             width = $(window).width();
-            if (width <= 1143) {
-                source = this.sources['1160'][this.playFormat];
-            } else if (width > 1143 && width <= 1263) {
-                source = this.sources['1280'][this.playFormat];
-            } else {
+
                 source = this.sources['default'][this.playFormat];
-            }
+
         }
         if (source && source != this.currentSource) {
             this.currentSource = source;
