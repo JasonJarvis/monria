@@ -1,0 +1,116 @@
+<?php
+
+
+function news_menu() {
+  $items = array();
+    $items['monria/news'] = array(
+        'page callback' => 'news_page',
+        'access arguments' => array('access content'),
+        'title' => 'News',
+    );
+    return $items;
+}
+
+function news_node_info() {
+    return array(
+        'news' => array(
+            'name' => t('Monria News'),
+            'base' => 'news',
+            'description' => t('Add news to Monria website'),
+            'title_label' => t('Monria News'),
+            'locked' => TRUE,
+        ),
+    );
+}
+
+function news_node_type_insert($content_type) {
+
+    if ($content_type->type == 'news') {
+
+        $body_instance = node_add_body_field($content_type, t('News Description'));
+
+        $body_instance['display']['news_list'] = array(
+            'label' => 'hidden',
+            'type' => 'text_summary_or_trimmed',
+        );
+
+        // Save our changes to the body field instance.
+        field_update_instance($body_instance);
+
+        // Create all the fields we are adding to our content type.
+        foreach (_news_installed_fields() as $field) {
+            field_create_field($field);
+        }
+
+        // Create all the instances for our fields.
+        foreach (_news_installed_instances() as $instance) {
+            $instance['entity_type'] = 'node';
+            $instance['bundle'] = 'news';
+            field_create_instance($instance);
+        }
+
+
+    }
+}
+
+function news_form($node, $form_state) {
+    return node_content_form($node, $form_state);
+}
+
+function news_page() {
+    $renderable_array = array();
+    // We query the database and find all of the nodes for the type we defined.
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status';
+    $result = db_query($sql,
+        array(
+            ':type' => 'news',
+            ':status' => 1,
+        )
+    );
+    $renderable_array['explanation'] = array(
+        '#markup' => t("News will show here"),
+    );
+
+    foreach ($result as $row) {
+        $node = node_load($row->nid);
+
+        $renderable_array['node_list'][]= node_view($node, 'news_list');
+
+
+    }
+    return $renderable_array;
+}
+
+function _news_installed_fields() {
+    return array(
+
+        'news_image' => array(
+            'field_name' => 'news_image',
+            'type'       => 'image',
+            'cardinality' => 1,
+        ),
+    );
+}
+
+function news_entity_info_alter(&$entity_info) {
+    // Add our new view mode to the list of view modes...
+    $entity_info['node']['view modes']['news_list'] = array(
+        'label' => t('News List'),
+        'custom settings' => TRUE,
+    );
+}
+
+function _news_installed_instances() {
+    return array(
+        'news_image' => array(
+            'field_name'  => 'news_image',
+            'label'       => t('Upload an image:'),
+            'required'    => FALSE,
+            'widget' => array(
+                'type'    => 'image_image',
+                'weight'  => 2.10,
+            ),
+        ),
+    );
+}
+

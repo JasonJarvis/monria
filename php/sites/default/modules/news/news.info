@@ -1,0 +1,5 @@
+name = Monria News
+description = Monria News using CMS
+package = Monria
+dependencies[] = image
+core = 7.x
