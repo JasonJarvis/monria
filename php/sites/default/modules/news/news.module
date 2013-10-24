@@ -1,8 +1,9 @@
 <?php
 
 
-function news_menu() {
-  $items = array();
+function news_menu()
+{
+    $items = array();
     $items['monria/news'] = array(
         'page callback' => 'news_page',
         'access arguments' => array('access content'),
@@ -11,7 +12,8 @@ function news_menu() {
     return $items;
 }
 
-function news_node_info() {
+function news_node_info()
+{
     return array(
         'news' => array(
             'name' => t('Monria News'),
@@ -23,7 +25,8 @@ function news_node_info() {
     );
 }
 
-function news_node_type_insert($content_type) {
+function news_node_type_insert($content_type)
+{
 
     if ($content_type->type == 'news') {
 
@@ -53,11 +56,13 @@ function news_node_type_insert($content_type) {
     }
 }
 
-function news_form($node, $form_state) {
+function news_form($node, $form_state)
+{
     return node_content_form($node, $form_state);
 }
 
-function news_page() {
+function news_page()
+{
     $renderable_array = array();
     // We query the database and find all of the nodes for the type we defined.
     $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status';
@@ -74,25 +79,27 @@ function news_page() {
     foreach ($result as $row) {
         $node = node_load($row->nid);
 
-        $renderable_array['node_list'][]= node_view($node, 'news_list');
+        $renderable_array['node_list'][] = node_view($node, 'news_list');
 
 
     }
     return $renderable_array;
 }
 
-function _news_installed_fields() {
+function _news_installed_fields()
+{
     return array(
 
         'news_image' => array(
             'field_name' => 'news_image',
-            'type'       => 'image',
+            'type' => 'image',
             'cardinality' => 1,
         ),
     );
 }
 
-function news_entity_info_alter(&$entity_info) {
+function news_entity_info_alter(&$entity_info)
+{
     // Add our new view mode to the list of view modes...
     $entity_info['node']['view modes']['news_list'] = array(
         'label' => t('News List'),
@@ -100,17 +107,55 @@ function news_entity_info_alter(&$entity_info) {
     );
 }
 
-function _news_installed_instances() {
+function _news_installed_instances()
+{
     return array(
         'news_image' => array(
-            'field_name'  => 'news_image',
-            'label'       => t('Upload an image:'),
-            'required'    => FALSE,
+            'field_name' => 'news_image',
+            'label' => t('Upload an image:'),
+            'required' => FALSE,
             'widget' => array(
-                'type'    => 'image_image',
-                'weight'  => 2.10,
+                'type' => 'image_image',
+                'weight' => 2.10,
             ),
         ),
     );
 }
 
+function news_block_info()
+{
+    $blocks['recent_news'] = array(
+        'info' => t('Recent News'),
+    );
+    return $blocks;
+}
+
+function news_block_view($delta = '')
+{
+    // This example is adapted from node.module.
+    $block = array();
+
+    switch ($delta) {
+
+        case 'recent_news':
+            $block['subject'] = t('Recent content');
+            $type = "news";
+            $nodes = node_load_multiple(array(), array('type' => $type));
+            $block['content'] = theme('recent_news_block', array(
+                'nodes' => $nodes,
+            ));
+
+            break;
+    }
+    return $block;
+}
+
+function news_theme($existing, $type, $theme, $path)
+{
+    return array(
+        'recent_news_block' => array(
+            'template' => 'tpl/recent_news',
+            'variables' => array('nodes' => NULL),
+        ),
+    );
+}
