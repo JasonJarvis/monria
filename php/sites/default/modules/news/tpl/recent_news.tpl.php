@@ -7,7 +7,7 @@
                 <img height="152" width="225" src="<?php echo base_path().'/sites/default/files/'.$node->news_image['und'][0]['filename']; ?>">
             </div>
             <div class="text_wrapper">
-                <?php echo $node->body['und'][0]['safe_summary']; print_r($node->news_image['und'][0]); ?>
+                <?php echo $node->body['und'][0]['safe_summary'];   ?>
             </div>
         </div>
     <?php endforeach; ?>
