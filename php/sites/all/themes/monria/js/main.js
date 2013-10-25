@@ -18,15 +18,19 @@ $(function () {
 
     $doc.on('scroll', scrollMain);
 
-    var nav = $('.navigation');
+    var nav = $('.gamecontent_reposition .navigation');
+    var navInner= $('.gamecontent_reposition .navigation');
 
     function scrollMain() {
         if (!nav.hasClass('is-fixed') && $doc.scrollTop() >= 647) attachNav();
         if (nav.hasClass('is-fixed') && $doc.scrollTop() < 647) attachNav();
+
+        if (!navInner.hasClass('is-fixed') && $doc.scrollTop() >= 647) attachNav();
+        if (navInner.hasClass('is-fixed') && $doc.scrollTop() < 647) attachNav();
     }
 
     function attachNav() {
-        nav.toggleClass('is-fixed');
+        navInner.toggleClass('is-fixed');
     }
 
     $("#task_bar").jScroll({top: 360});
