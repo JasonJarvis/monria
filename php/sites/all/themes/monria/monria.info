@@ -94,6 +94,8 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 regions[front]          = Front Page
+regions[news]          = News Front Page
+
 
 
 ; The page_top and page_bottom regions are hidden, which means they will not
