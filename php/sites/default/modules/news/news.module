@@ -140,7 +140,15 @@ function news_block_view($delta = '')
         case 'recent_news':
             $block['subject'] = t('Recent content');
             $type = "news";
-            $nodes = node_load_multiple(array(), array('type' => $type));
+
+            $result = db_query("SELECT nid FROM node WHERE type like '%s'   ORDER BY nid DESC limit 0,3 ",array( $type));
+
+
+            foreach ($result as $rec) {
+                $nodes[] =node_load($rec->nid);
+            }
+
+
             $block['content'] = theme('recent_news_block', array(
                 'nodes' => $nodes,
             ));
