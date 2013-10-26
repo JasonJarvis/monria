@@ -8,77 +8,113 @@
  */
 ?>
 
-    <div class="navigation">
+<div id="page">
 
-        <div class="bar">
-            <a class="home" href=""></a>
-            <a class="download" href=""></a>
-            <a class="forum" href=""></a>
-            <a class="login" href=""></a>
-            <a class="guide" href=""></a>
-            <a class="media" href=""></a>
-            <a class="about" href=""></a>
-        </div>
+    <header class="header" id="header" role="banner">
 
-    </div>
-    <div class="bg1">
-        <div id="flashContent" >
-            <div id="flashBox">
+        <?php if ($logo): ?>
+            <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" class="header__logo" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" class="header__logo-image" /></a>
+        <?php endif; ?>
 
-                <span class="card_left_span">Screenshots</span>
-                <span class="card_middle_span">Video</span>
-                <span class="card_right_span">Story</span>
+        <?php if ($site_name || $site_slogan): ?>
+            <div class="header__name-and-slogan" id="name-and-slogan">
+                <?php if ($site_name): ?>
+                    <h1 class="header__site-name" id="site-name">
+                        <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><span><?php print $site_name; ?></span></a>
+                    </h1>
+                <?php endif; ?>
 
-                <a href="download/?ccode=affimoon130401" class="card_left">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_middle">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_right">
-
-                </a>
-
-                <div id="video_container">
-                    <video id="flashObj" class="video-background" loop="loop" webkit-playsinline="true"
-                           src=""
-                           style="opacity: 1;"></video>
-                </div>
+                <?php if ($site_slogan): ?>
+                    <div class="header__site-slogan" id="site-slogan"><?php print $site_slogan; ?></div>
+                <?php endif; ?>
             </div>
+        <?php endif; ?>
+
+        <?php if ($secondary_menu): ?>
+            <nav class="header__secondary-menu" id="secondary-menu" role="navigation">
+                <?php print theme('links__system_secondary_menu', array(
+                    'links' => $secondary_menu,
+                    'attributes' => array(
+                        'class' => array('links', 'inline', 'clearfix'),
+                    ),
+                    'heading' => array(
+                        'text' => $secondary_menu_heading,
+                        'level' => 'h2',
+                        'class' => array('element-invisible'),
+                    ),
+                )); ?>
+            </nav>
+        <?php endif; ?>
+
+        <?php print render($page['header']); ?>
+
+    </header>
+
+    <div id="main">
+
+        <div id="content" class="column" role="main">
+            <?php print render($page['highlighted']); ?>
+            <?php print $breadcrumb; ?>
+            <a id="main-content"></a>
+            <?php print render($title_prefix); ?>
+            <?php if ($title): ?>
+                <h1 class="page__title title" id="page-title"><?php print $title; ?></h1>
+            <?php endif; ?>
+            <?php print render($title_suffix); ?>
+            <?php print $messages; ?>
+            <?php print render($tabs); ?>
+            <?php print render($page['help']); ?>
+            <?php if ($action_links): ?>
+                <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
+            <?php print render($page['content']); ?>
+            <?php print $feed_icons; ?>
         </div>
 
-    </div>
-    <div class="bg2"></div>
-    <div class="bg3">
+        <div id="navigation">
 
-    </div>
-    <div class="content">
+            <?php if ($main_menu): ?>
+                <nav id="main-menu" role="navigation" tabindex="-1">
+                    <?php
+                    // This code snippet is hard to modify. We recommend turning off the
+                    // "Main menu" on your sub-theme's settings form, deleting this PHP
+                    // code block, and, instead, using the "Menu block" module.
+                    // @see https://drupal.org/project/menu_block
+                    print theme('links__system_main_menu', array(
+                        'links' => $main_menu,
+                        'attributes' => array(
+                            'class' => array('links', 'inline', 'clearfix'),
+                        ),
+                        'heading' => array(
+                            'text' => t('Main menu'),
+                            'level' => 'h2',
+                            'class' => array('element-invisible'),
+                        ),
+                    )); ?>
+                </nav>
+            <?php endif; ?>
 
-        <div class="reposition monria">
-            <h1>Monria</h1>
-
-            <?php print render($page['news']); ?>
-
-            <div class="ship_content">
-                <img src="img/text.png">
-                <a href="#"></a>
-
-            </div>
-            <div class="btns_content">
-                <a href="#" class="btn_faq"></a>
-                <a href="#" class="btn_forum"></a>
-            </div>
+            <?php print render($page['navigation']); ?>
 
         </div>
 
-        <div id="footer"><img width="1000" height="1" style="margin-bottom: 20px" src="img/logos/footergradient.jpg" alt="">
-            <a target="_blank" href="http://www.mindark.com"><img width="115" height="35" style="display:inline;" src="img/logos/mindark_footer_logo.jpg" alt=""></a>
-            <img width="155" height="35" style="display:inline;" src="img/logos/eu_footer_logo.jpg" alt=""><br>
-            <br>
-            <span id="legal-links"><a target="_blank" href="http://legal.entropiauniverse.com">Rules and Policies</a> | <a href="/legal/">Legal Notice</a></span>
-            <p>Monria is trademark or registered trademark of Entropa. All other trademarks are the property of their respective owners.<br>
-                2013 Monria. All rights reserved.</p>
-        </div>
+        <?php
+        // Render the sidebars to see if there's anything in them.
+        $sidebar_first  = render($page['sidebar_first']);
+        $sidebar_second = render($page['sidebar_second']);
+        ?>
+
+        <?php if ($sidebar_first || $sidebar_second): ?>
+            <aside class="sidebars">
+                <?php print $sidebar_first; ?>
+                <?php print $sidebar_second; ?>
+            </aside>
+        <?php endif; ?>
 
     </div>
+
+    <?php print render($page['footer']); ?>
+
 </div>
+
+<?php print render($page['bottom']); ?>
