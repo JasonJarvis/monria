@@ -4,7 +4,7 @@
 function news_menu()
 {
     $items = array();
-    $items['monria/news'] = array(
+    $items['news'] = array(
         'page callback' => 'news_page',
         'access arguments' => array('access content'),
         'title' => 'News',
@@ -65,25 +65,23 @@ function news_page()
 {
     $renderable_array = array();
     // We query the database and find all of the nodes for the type we defined.
-    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status';
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status order by nid DESC';
     $result = db_query($sql,
         array(
             ':type' => 'news',
             ':status' => 1,
         )
     );
+
     $renderable_array['explanation'] = array(
-        '#markup' => t("News will show here"),
+
     );
 
     foreach ($result as $row) {
-        $node = node_load($row->nid);
-
-        $renderable_array['node_list'][] = node_view($node, 'news_list');
-
+        $nodes[] = node_load($row->nid);
 
     }
-    return $renderable_array;
+    return theme('news',array('nodes'=>$nodes));
 }
 
 function _news_installed_fields()
@@ -163,6 +161,10 @@ function news_theme($existing, $type, $theme, $path)
     return array(
         'recent_news_block' => array(
             'template' => 'tpl/recent_news',
+            'variables' => array('nodes' => NULL),
+        ),
+        'news' => array(
+            'template' => 'tpl/news',
             'variables' => array('nodes' => NULL),
         ),
     );
