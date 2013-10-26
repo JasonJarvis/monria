@@ -316,6 +316,11 @@ body {
     top: 49px;
     width: 630px;
 }
+.news_block .text_wrapper  h4{
+    font-size:15px;
+    font-weight: bold;
+    padding-bottom:10px;
+}
 .read_more_news {
     bottom: 17px;
     position: absolute;
@@ -494,10 +499,10 @@ div#footer {
 .gamecontent_reposition_inner div#footer {
 
     height: 100px;
-    left: 681px;
+    left: 651px;
     position: absolute;
     text-align: center;
-    bottom: 26px;
+    top: 810px;
 }
 
 div#footer p {
