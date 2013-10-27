@@ -1,0 +1,171 @@
+.gamecontent_reposition_inner {
+
+    overflow-y: visible;
+}
+.gamecontent_reposition_inner .bg1 {
+    background: url("../img/inside/top.jpg") no-repeat scroll center top;
+    height: 892px;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+}
+.gamecontent_reposition_inner .navigation {
+    background: url("../img/menu/menu.png") no-repeat scroll center top ;
+    height: 145px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 288px;
+    width: 100%;
+    z-index: 100;
+}
+
+.gamecontent_reposition_inner .content {
+    background: url("../img/inside/tile.png") repeat-y scroll 0 0;
+    height: auto;
+    left: 50%;
+    margin-left: -539px;
+    margin-top: 554px;
+    min-height: 500px;
+    position: absolute;
+    top: 338px;
+    width: 100%;
+    z-index: 11;
+}
+.gamecontent_reposition_inner .reposition {
+    color: #FFFFFF;
+    line-height: 18px;
+    margin-left: 57px;
+    margin-top: -437px;
+    min-height: 730px;
+    padding-top: 0;
+}
+
+.gamecontent_reposition_inner .news_content {
+    top:30px;
+}
+
+.gamecontent_reposition_inner .news_content {
+    height: auto;
+}
+.gamecontent_reposition_inner .news_block {
+    background: url("../img/inside/rectangle.png") repeat scroll 0 0 ;
+    height: 215px;
+    margin-bottom: 23px;
+    position: relative;
+    width: 964px;
+}
+
+
+.gamecontent_reposition_inner .news_block  .img_wrapper {
+    float: left;
+    height: 190px;
+    left: 12px;
+    position: relative;
+    top: 11px;
+    width: 258px;
+}
+
+.gamecontent_reposition_inner .news_block .text_wrapper {
+    color: #FFFFFF;
+    float: left;
+    font-family: tahoma;
+    font-size: 12px;
+    left: 49px;
+    line-height: 14px;
+    position: relative;
+    top: 23px;
+    width: 630px;
+}
+.gamecontent_reposition_inner .card_left {
+    left: -373px;
+    top: 166px;
+
+}
+
+.gamecontent_reposition_inner .card_middle {
+    left: -119px;
+    top: 147px;
+}
+
+.gamecontent_reposition_inner .card_right {
+    left: 116px;
+    top: 166px;
+
+}
+
+.gamecontent_reposition_inner .card_left_span, .gamecontent_reposition_inner  .card_middle_span,.gamecontent_reposition_inner  .card_right_span {
+    color: #FFFFFF;
+    display: block;
+    font: bold 17px/22px "Palatino Linotype";
+    left: -252px;
+    margin-top: 130px;
+    position: absolute;
+    text-shadow: 0 0 4px #000000, 0 0 8px #000000;
+    top: 152px;
+}
+
+.gamecontent_reposition_inner  .card_middle_span {
+    left: -20px;
+    top: 152px;
+}
+.gamecontent_reposition_inner  .card_right_span {
+    left: 193px;
+    top: 152px;
+}
+.gamecontent_reposition_inner .bottom {
+    background: url("../img/inside/down.jpg") no-repeat scroll 0 0;
+    height: 917px;
+    margin: -294px 0 0 -422px;
+    overflow: hidden;
+    padding: 0 422px 0 0;
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
+
+.gamecontent_reposition_inner div#footer {
+
+    height: 100px;
+    left: 492px;
+    position: absolute;
+    text-align: center;
+    top: 776px;
+    width: 1000px;
+}
+
+.gamecontent_reposition_inner .node-news {
+    width:930px;
+    color:white;
+    font-family: Arial;
+    font-size:14px;
+    line-height:16px;
+    margin-left:49px;
+    min-height:700px;
+}
+
+.gamecontent_reposition_inner .node-title   a {
+    color:white;
+    font-family: Arial;
+    font-size:22px;
+    text-decoration:none;
+}
+
+.gamecontent_reposition_inner img {
+    max-width: 900px;
+}
+
+.gamecontent_reposition_inner a {
+    color:white;
+    font-family: Arial;
+}
+
+.gamecontent_reposition_inner .news_title {
+    background: url("../img/inside/news.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    height: 27px;
+    left: 423px;
+    position: relative;
+    top: -35px;
+    width: 116px;Upload an image
+}
