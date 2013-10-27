@@ -17,17 +17,7 @@ body {
     position: relative;
     width: 100%;
 }
-.gamecontent_reposition_inner {
 
-    overflow-y: visible;
-}
-.gamecontent_reposition_inner .bg1 {
-    background: url("../img/inside/top.jpg") no-repeat scroll center top;
-    height: 892px;
-    position: relative;
-    width: 100%;
-    z-index: 10;
-}
 
 .gamecontent_reposition .bg1 {
     background: url("../img/bg/bg_top.jpg") no-repeat scroll center top;
@@ -62,16 +52,7 @@ body {
     width: 100%;
     z-index: 100;
 }
-.gamecontent_reposition_inner .navigation {
-    background: url("../img/menu/menu.png") no-repeat scroll center top ;
-    height: 145px;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 288px;
-    width: 100%;
-    z-index: 100;
-}
+
 
 @media not all {
     .navigation, .bg1, .bg2, .bg3 {
@@ -194,18 +175,6 @@ body {
     z-index: 9;
 }
 
-.gamecontent_reposition_inner .content {
-    background: url("../img/inside/tile.png") repeat-y scroll 0 0;
-    height: auto;
-    left: 50%;
-    margin-left: -539px;
-    margin-top: 554px;
-    min-height: 500px;
-    position: absolute;
-    top: 338px;
-    width: 100%;
-    z-index: 11;
-}
 
 .content h1 {
     display: none;
@@ -224,23 +193,13 @@ body {
     padding-top: 112px;
 }
 
-.gamecontent_reposition_inner .reposition {
-    margin-left: 64px;
-    margin-top: -437px;
-    padding-top: 0;
-    color:white;
-    line-height:18px;
-    min-height: 730px;
-}
 
 .news_content {
     height: 680px;
     position: relative;
     width: 998px;
 }
-.gamecontent_reposition_inner .news_content {
-    height: auto;
-}
+
 .ship_content {
     height: 403px;
     position: relative;
@@ -286,6 +245,8 @@ body {
     position: relative;
     width: 998px;
 }
+
+
 .news_block .img_wrapper {
     float: left;
     height: 190px;
@@ -294,6 +255,8 @@ body {
     top: 20px;
     width: 258px;
 }
+
+
 .news_block .img_wrapper .border {
     background: url("../img/news/frame.png") no-repeat scroll 0 0;
     height: 190px;
@@ -319,6 +282,8 @@ body {
     top: 30px;
     width: 630px;
 }
+
+
 .news_block .text_wrapper  h4 a{
     font-size:15px;
     font-weight: bold;
@@ -404,22 +369,6 @@ body {
     width: 252px;
 }
 
-.gamecontent_reposition_inner .card_left {
-    left: -373px;
-    top: 166px;
-
-}
-
-.gamecontent_reposition_inner .card_middle {
-    left: -119px;
-    top: 147px;
-}
-
-.gamecontent_reposition_inner .card_right {
-    left: 116px;
-    top: 166px;
-
-}
 
 .gamecontent_reposition .card_left_span, .gamecontent_reposition  .card_middle_span,.gamecontent_reposition  .card_right_span {
     color: #FFFFFF;
@@ -432,16 +381,6 @@ body {
     top: 479px;
 }
 
-.gamecontent_reposition_inner .card_left_span, .gamecontent_reposition_inner  .card_middle_span,.gamecontent_reposition_inner  .card_right_span {
-    color: #FFFFFF;
-    display: block;
-    font: bold 17px/22px "Palatino Linotype";
-    left: -252px;
-    margin-top: 130px;
-    position: absolute;
-    text-shadow: 0 0 4px #000000, 0 0 8px #000000;
-    top: 152px;
-}
 
 .gamecontent_reposition  .card_middle_span, .gamecontent_reposition_inner  .card_middle_span {
     left: -20px;
@@ -452,14 +391,6 @@ body {
     top: 479px;
 }
 
- .gamecontent_reposition_inner  .card_middle_span {
-    left: -20px;
-     top: 152px;
-}
-.gamecontent_reposition_inner  .card_right_span {
-    left: 193px;
-    top: 152px;
-}
 .card_middle {
     background: url("../img/btn/hovers.png") repeat scroll -253px 187px;
     height: 166px;
@@ -486,16 +417,7 @@ body {
 .ship_content a:hover {
     background-position: left bottom;
 }
-.gamecontent_reposition_inner .bottom {
-    background: url("../img/inside/down.jpg") no-repeat scroll 0 0;
-    height: 917px;
-    margin: -294px 0 0 -422px;
-    overflow: hidden;
-    padding: 0 422px 0 0;
-    position: relative;
-    width: 100%;
-    z-index: -1;
-}
+
 div#footer {
     margin-top: 15px;
     position: relative;
@@ -503,16 +425,6 @@ div#footer {
     top: 424px;
     width:1000px;
 }
-.gamecontent_reposition_inner div#footer {
-
-    height: 100px;
-    left: 492px;
-    position: absolute;
-    text-align: center;
-    top: 776px;
-    width: 1000px;
-}
-
 div#footer p {
     color: #757575;
     font-size: 10px;
@@ -529,32 +441,5 @@ div#footer a {
 }
 div#footer a:hover {
     text-decoration: underline;
-}
-
-
-.gamecontent_reposition_inner .node-news {
-    width:930px;
-    color:white;
-    font-family: Arial;
-    font-size:14px;
-    line-height:16px;
-    margin-left:49px;
-    min-height:700px;
-}
-
-.gamecontent_reposition_inner .node-title   a {
-    color:white;
-    font-family: Arial;
-    font-size:22px;
-    text-decoration:none;
-}
-
-.gamecontent_reposition_inner img {
-    max-width: 900px;
-}
-
-.gamecontent_reposition_inner a {
-    color:white;
-    font-family: Arial;
 }
 

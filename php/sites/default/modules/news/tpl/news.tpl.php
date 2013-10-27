@@ -1,3 +1,7 @@
+<div class="news_title">
+
+</div>
+
 <div class="news_content">
 
     <?php foreach ($nodes as $node): ?>

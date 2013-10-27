@@ -2,7 +2,7 @@
     <div class="navigation">
 
         <div class="bar">
-            <a class="home" href=""></a>
+            <a class="home" href="<?php echo base_path() ?>"></a>
             <a class="download" href=""></a>
             <a class="forum" href=""></a>
             <a class="login" href=""></a>
