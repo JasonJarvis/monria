@@ -12,6 +12,6 @@
         </div>
     <?php endforeach; ?>
     <div class="read_more_news">
-        <a href="#"></a>
+        <a href="<?php echo base_path(); ?>/news"></a>
     </div>
 </div>
