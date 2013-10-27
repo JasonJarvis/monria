@@ -22,7 +22,7 @@ body {
     overflow-y: visible;
 }
 .gamecontent_reposition_inner .bg1 {
-    background: url("../img/inside/top.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/inside/top.jpg") no-repeat scroll center top;
     height: 892px;
     position: relative;
     width: 100%;
@@ -30,14 +30,14 @@ body {
 }
 
 .gamecontent_reposition .bg1 {
-    background: url("../img/bg/bg_top.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/bg/bg_top.jpg") no-repeat scroll center top;
     height: 652px;
     position: relative;
     width: 100%;
     z-index: 10;
 }
 .gamecontent_reposition .bg2 {
-    background: url("../img/bg/bg_midle.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/bg/bg_midle.jpg") no-repeat scroll center top;
     height: 1268px;
     position: absolute;
     top: 653px;
@@ -45,7 +45,7 @@ body {
     z-index: 1;
 }
 .gamecontent_reposition .bg3 {
-    background: url("../img/bg/bg_footer.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/bg/bg_footer.jpg") no-repeat scroll center top;
     height: 976px;
     position: absolute;
     top: 1921px;
@@ -53,7 +53,7 @@ body {
     z-index: 1;
 }
 .gamecontent_reposition .navigation {
-    background: url("../img/menu/menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/menu/menu.png") no-repeat scroll center top;
     height: 145px;
     margin: 0;
     padding: 0;
@@ -63,7 +63,7 @@ body {
     z-index: 100;
 }
 .gamecontent_reposition_inner .navigation {
-    background: url("../img/menu/menu.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/menu/menu.png") no-repeat scroll center top ;
     height: 145px;
     margin: 0;
     padding: 0;
@@ -106,7 +106,7 @@ body {
     top: 32px;
 }
 .navigation .bar a:hover {
-    background: url("../img/menu/menu.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/menu/menu.png") no-repeat scroll 0 0;
 }
 .navigation .bar a.home {
     left: 0;
@@ -195,7 +195,7 @@ body {
 }
 
 .gamecontent_reposition_inner .content {
-    background: url("../img/inside/tile.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/inside/tile.png") repeat-y scroll 0 0;
     height: auto;
     left: 50%;
     margin-left: -539px;
@@ -211,7 +211,7 @@ body {
     display: none;
 }
 .news_title {
-    background: url("../img//news/news.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img//news/news.png") repeat scroll 0 0;
     height: 27px;
     left: 107px;
     position: absolute;
@@ -258,7 +258,7 @@ body {
     width: 1061px;
 }
 .btns_content a.btn_faq {
-    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top;
     display: block;
     height: 210px;
     left: 17px;
@@ -270,7 +270,7 @@ body {
     background-position: -782px -277px;
 }
 .btns_content a.btn_forum {
-    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top;
     display: block;
     height: 210px;
     position: absolute;
@@ -295,7 +295,7 @@ body {
     width: 258px;
 }
 .news_block .img_wrapper .border {
-    background: url("../img/news/frame.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/news/frame.png") no-repeat scroll 0 0;
     height: 190px;
     position: absolute;
     width: 258px;
@@ -316,7 +316,7 @@ body {
     left: 74px;
     line-height: 14px;
     position: relative;
-    top: 49px;
+    top: 30px;
     width: 630px;
 }
 .news_block .text_wrapper  h4 a{
@@ -325,6 +325,7 @@ body {
    margin-bottom:10px;
     color:white;
     text-decoration: none;
+    line-height:40px;
 }
 .read_more_news {
     bottom: 17px;
@@ -332,7 +333,7 @@ body {
     right: 49px;
 }
 .read_more_news a {
-    background: url("../img/news/Read-More-News-..png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/news/Read-More-News-..png") no-repeat scroll 0 0;
     display: block;
     height: 34px;
     width: 280px;
@@ -351,7 +352,7 @@ body {
     z-index: 3;
 }
 #youtube, #youtube:hover, #facebook, #facebook:hover, #twitter, #twitter:hover {
-    background: url("../img/btn/social.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/btn/social.png") no-repeat scroll center top;
     width: 100px;
 }
 #youtube {
@@ -386,17 +387,17 @@ body {
     width: 472px;
 }
 .top_register {
-    background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0;
     left: 41px;
     top: 41px;
 }
 .top_download {
-    background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0;
     left: -505px;
     top: 40px;
 }
 .card_left {
-    background: url("../img/btn/hovers.png") repeat scroll 5px 168px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll 5px 168px;
     height: 166px;
     left: -363px;
     top: 488px;
@@ -460,21 +461,21 @@ body {
     top: 152px;
 }
 .card_middle {
-    background: url("../img/btn/hovers.png") repeat scroll -253px 187px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll -253px 187px;
     height: 166px;
     left: -110px;
     top: 469px;
     width: 235px;
 }
 .card_right {
-    background: url("../img/btn/hovers.png") repeat scroll -493px 168px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll -493px 168px;
     height: 166px;
     left: 125px;
     top: 488px;
     width: 252px;
 }
 .ship_content a {
-    background: url("../img/btn/more.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/more.png") repeat scroll 0 0;
     display: block;
     height: 25px;
     position: absolute;
@@ -486,7 +487,7 @@ body {
     background-position: left bottom;
 }
 .gamecontent_reposition_inner .bottom {
-    background: url("../img/inside/down.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/inside/down.jpg") no-repeat scroll 0 0;
     height: 917px;
     margin: -294px 0 0 -422px;
     overflow: hidden;
@@ -500,14 +501,16 @@ div#footer {
     position: relative;
     text-align: center;
     top: 424px;
+    width:1000px;
 }
 .gamecontent_reposition_inner div#footer {
 
     height: 100px;
-    left: 651px;
+    left: 492px;
     position: absolute;
     text-align: center;
-    top: 810px;
+    top: 776px;
+    width: 1000px;
 }
 
 div#footer p {
