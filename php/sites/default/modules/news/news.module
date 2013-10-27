@@ -139,7 +139,7 @@ function news_block_view($delta = '')
             $block['subject'] = t('Recent content');
             $type = "news";
 
-            $result = db_query("SELECT nid FROM node WHERE type like '%s'   ORDER BY nid DESC limit 0,3 ",array( $type));
+            $result = db_query("SELECT nid FROM node WHERE type like '%s' and promote = 1 and publish = 1  ORDER BY nid DESC limit 0,3 ",array( $type));
 
 
             foreach ($result as $rec) {
