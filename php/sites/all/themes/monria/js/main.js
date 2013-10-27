@@ -25,8 +25,10 @@ $(function () {
         if (!nav.hasClass('is-fixed') && $doc.scrollTop() >= 647) attachNav();
         if (nav.hasClass('is-fixed') && $doc.scrollTop() < 647) attachNav();
 
-        if (!navInner.hasClass('is-fixed') && $doc.scrollTop() >= 332) attachNav();
-        if (navInner.hasClass('is-fixed') && $doc.scrollTop() < 332) attachNav();
+        if ($(".gamecontent_reposition_inner")[0]) {
+            if (!navInner.hasClass('is-fixed') && $doc.scrollTop() >= 332) attachNav();
+            if (navInner.hasClass('is-fixed') && $doc.scrollTop() < 332) attachNav();
+        }
     }
 
     function attachNav() {
