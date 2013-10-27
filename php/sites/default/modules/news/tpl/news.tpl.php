@@ -11,7 +11,7 @@
                 <img height="152" width="225" src="<?php echo base_path().'/sites/default/files/'.$node->news_image['und'][0]['filename']; ?>">
             </div>
             <div class="text_wrapper">
-                <h4> <a href="<?php echo base_path() ?>/node/<?php echo $node->nid;?>"> <?php echo $node->title;   ?></a></h4>
+                <h4> <a href="<?php echo base_path() ?>news"> <?php echo $node->title;   ?></a></h4>
                 <?php echo $node->body['und'][0]['safe_summary'];   ?>
             </div>
         </div>
