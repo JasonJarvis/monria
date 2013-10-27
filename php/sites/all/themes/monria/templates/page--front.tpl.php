@@ -56,7 +56,7 @@
 
         <div class="reposition monria">
             <h1>Monria</h1>
-
+            <a href="<?php echo base_path();?>news" class="news_link"></a>
             <?php print render($page['news']); ?>
 
             <div class="ship_content">

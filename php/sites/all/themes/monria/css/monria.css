@@ -443,3 +443,11 @@ div#footer a:hover {
     text-decoration: underline;
 }
 
+.news_link {
+    display: block;
+    height: 100px;
+    left: 55px;
+    position: absolute;
+    top: -11px;
+    width: 200px;
+}
