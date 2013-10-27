@@ -60,7 +60,7 @@
             <?php print render($page['news']); ?>
 
             <div class="ship_content">
-                <img src="<?php echo path_to_theme() ;?>img/text.png">
+                <img src="<?php echo path_to_theme() ;?>/img/text.png">
                 <a href="#"></a>
 
             </div>
