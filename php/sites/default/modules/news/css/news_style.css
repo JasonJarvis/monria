@@ -1,0 +1,29 @@
+.news_detail_left {
+
+    display: block;
+    float: left;
+    font-family: arial;
+    line-height: 20px;
+    overflow: hidden;
+    width: 620px;
+}
+.news_detail_left h4 {
+    font-size:20px;
+    font-weight: bold;
+}
+.news_detail_right {
+    width: 360px;
+    overflow: hidden;
+    float: left;
+}
+
+.recene_title {
+    background: url(../img/recent.png) no-repeat transparent;
+    width: 415px;
+    height: 56px;
+    display: block;
+}
+
+.news_title {
+    left:419px !important;
+}

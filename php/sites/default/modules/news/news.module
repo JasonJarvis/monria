@@ -7,7 +7,17 @@ function news_menu()
     $items['news'] = array(
         'page callback' => 'news_page',
         'access arguments' => array('access content'),
-        'title' => 'News',
+        'title' => 'Monria - News',
+    );
+    $items['news_detail'] = array(
+        'page callback' => 'news_page_detail',
+        'access arguments' => array('access content'),
+        'title' => 'Monria News',
+    );
+    $items['load_news'] = array(
+        'page callback' => 'news_page_ajax',
+        'access arguments' => array('access content'),
+        'title' => 'Monria News',
     );
     return $items;
 }
@@ -61,6 +71,27 @@ function news_form($node, $form_state)
     return node_content_form($node, $form_state);
 }
 
+function news_page_detail($nid)
+{
+    $node = node_load($nid);
+      return theme('news_detail', array('node'=>$node));
+
+}
+function news_page_ajax($page =1)
+{
+    $page = ($page-1) * 3;
+
+    $result = db_query_range("SELECT nid FROM node WHERE type like 'news' and  status = 1  ORDER BY nid DESC",$page,3);
+
+    foreach ($result as $rec) {
+        $nodes[] = node_load($rec->nid);
+    }
+
+    return theme('news_ajax', array('nodes'=>$nodes));
+
+}
+
+
 function news_page()
 {
     $renderable_array = array();
@@ -73,15 +104,13 @@ function news_page()
         )
     );
 
-    $renderable_array['explanation'] = array(
-
-    );
+    $renderable_array['explanation'] = array();
 
     foreach ($result as $row) {
         $nodes[] = node_load($row->nid);
 
     }
-    return theme('news',array('nodes'=>$nodes));
+    return theme('news', array('nodes' => $nodes));
 }
 
 function _news_installed_fields()
@@ -139,11 +168,11 @@ function news_block_view($delta = '')
             $block['subject'] = t('Recent content');
             $type = "news";
 
-            $result = db_query("SELECT nid FROM node WHERE type like '%s' and promote = 1 and status = 1  ORDER BY nid DESC limit 0,3 ",array( $type));
+            $result = db_query("SELECT nid FROM node WHERE type like '%s' and promote = 1 and status = 1  ORDER BY nid DESC limit 0,3 ", array($type));
 
 
             foreach ($result as $rec) {
-                $nodes[] =node_load($rec->nid);
+                $nodes[] = node_load($rec->nid);
             }
 
 
@@ -165,6 +194,14 @@ function news_theme($existing, $type, $theme, $path)
         ),
         'news' => array(
             'template' => 'tpl/news',
+            'variables' => array('nodes' => NULL),
+        ),
+        'news_detail' => array(
+            'template' => 'tpl/news_detail',
+            'variables' => array('node' => NULL),
+        ),
+        'news_ajax' => array(
+            'template' => 'tpl/news_ajax',
             'variables' => array('nodes' => NULL),
         ),
     );

@@ -1,0 +1,21 @@
+.news_ajax_block  {
+    width:316;
+    height:75;
+    background: url(../img/trans.png) repeat;
+    margin-top:10px;
+}
+
+.news_ajax_block img {
+     border : 1px solid black;
+     vertical-align: middle;
+    margin:4px;
+ }
+
+.news_ajax_block a {
+    color:white;
+    font-family: white;
+    font-size:12px;
+    text-decoration: none;
+    font-family: arial;
+    font-weight: bold;
+}
