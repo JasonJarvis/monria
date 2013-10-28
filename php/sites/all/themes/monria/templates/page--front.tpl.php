@@ -1,3 +1,4 @@
+<script src="<?php print $base_path . path_to_theme(); ?>/js/video.js"></script>
 <div id="task_bar" >
     <a href="https://www.facebook.com/monriathegame" target="_blank" alt="Monria Facebook" title="Monria Facebook"> <div id="facebook"></div></a>
     <a href="https://www.youtube.com/monriathegame" target="_blank" alt="Monria Youtube" title="Monria Youtube"><div id="youtube"></div></a>

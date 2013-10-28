@@ -7,7 +7,23 @@
  * @see https://drupal.org/node/1728096
  */
 
+function monria_preprocess_page(&$vars) {
 
+    switch(arg(0)) {
+        case 'load_news' :
+            $vars['theme_hook_suggestions'][] = 'page__blank';
+        break;
+   }
+}
+
+
+function monria_preprocess_html(&$vars) {
+    switch(arg(0)) {
+        case 'load_news' :
+            $vars['theme_hook_suggestions'][] = 'html__blank';
+            break;
+    }
+}
 /**
  * Override or insert variables into the maintenance page template.
  *

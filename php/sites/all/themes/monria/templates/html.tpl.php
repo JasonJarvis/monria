@@ -21,6 +21,11 @@
     <meta http-equiv="cleartype" content="on">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
     <?php print $styles; ?>
+  <script>
+
+      var base = <?php echo base_path(); ?>
+  </script>
+
     <script src="<?php print $base_path . path_to_theme(); ?>/js/jquery-1.10.2.min.js"></script>
     <script src="<?php print $base_path . path_to_theme(); ?>/js/jquery.jscroll.js"></script>
     <script src="<?php print $base_path . path_to_theme(); ?>/js/BrowserDetect.js"></script>
