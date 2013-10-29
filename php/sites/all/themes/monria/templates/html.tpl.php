@@ -23,7 +23,7 @@
     <?php print $styles; ?>
   <script>
 
-      var base = <?php echo base_path(); ?>
+      var base = "<?php echo base_path(); ?>";
   </script>
 
     <script src="<?php print $base_path . path_to_theme(); ?>/js/jquery-1.10.2.min.js"></script>
