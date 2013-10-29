@@ -74,7 +74,9 @@ function news_form($node, $form_state)
 function news_page_detail($nid)
 {
     $node = node_load($nid);
-      return theme('news_detail', array('node'=>$node));
+    $news_cnt = db_query("select count(*) from node WHERE type like 'news' and  status = 1")->fetchField();
+
+    return theme('news_detail', array('node'=>$node,'news_cnt'=>$news_cnt));
 
 }
 function news_page_ajax($page =1)
@@ -198,7 +200,7 @@ function news_theme($existing, $type, $theme, $path)
         ),
         'news_detail' => array(
             'template' => 'tpl/news_detail',
-            'variables' => array('node' => NULL),
+            'variables' => array('node' => NULL,'news_cnt'=>0),
         ),
         'news_ajax' => array(
             'template' => 'tpl/news_ajax',
