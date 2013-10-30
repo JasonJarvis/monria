@@ -1,0 +1,171 @@
+<?php
+
+
+function media_menu()
+{
+    $items = array();
+    $items['media'] = array(
+        'page callback' => 'media_page',
+        'access arguments' => array('access content'),
+        'title' => 'Monria - media',
+    );
+
+    return $items;
+}
+
+function media_node_info()
+{
+    return array(
+        'artwork' => array(
+            'name' => t('Monria Artwork'),
+            'base' => 'media',
+            'description' => t('Add artwork to Monria website'),
+            'title_label' => t('Monria Artwork'),
+            'locked' => TRUE,
+        ),
+        'screenshot' => array(
+            'name' => t('Monria screenshot'),
+            'base' => 'media',
+            'description' => t('Add Screenshot to Monria website'),
+            'title_label' => t('Monria Screenshot'),
+            'locked' => TRUE,
+        ),
+        'wallpaper' => array(
+            'name' => t('Monria Wallpaper'),
+            'base' => 'media',
+            'description' => t('Add wallpaper to Monria website'),
+            'title_label' => t('Monria Wallpaper'),
+            'locked' => TRUE,
+        ),
+    );
+}
+
+function media_node_type_insert($content_type)
+{
+
+    if ($content_type->type == 'artwork' || $content_type->type == 'screenshot'  || $content_type->type == 'wallpaper' ) {
+        // Create all the fields we are adding to our content type.
+        foreach (_media_installed_fields($content_type->type ) as $field) {
+            field_create_field($field);
+        }
+
+        // Create all the instances for our fields.
+        foreach (_media_installed_instances($content_type->type ) as $instance) {
+            $instance['entity_type'] = 'node';
+            $instance['bundle'] = $content_type->type;
+            field_create_instance($instance);
+        }
+
+
+    }
+}
+
+function media_form($node, $form_state)
+{
+    return node_content_form($node, $form_state);
+}
+
+
+
+
+function media_page($type='artwork')
+{
+    $renderable_array = array();
+    // We query the database and find all of the nodes for the type we defined.
+    $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status order by nid DESC';
+    $result = db_query($sql,
+        array(
+            ':type' =>$type,
+            ':status' => 1,
+        )
+    );
+
+    $renderable_array['explanation'] = array();
+
+    foreach ($result as $row) {
+        $nodes[] = node_load($row->nid);
+
+    }
+
+    return theme('media', array('nodes' => $nodes));
+}
+
+function _media_installed_fields($type)
+{
+    return array(
+
+        'media_image' => array(
+            'field_name' => $type.'_image',
+            'type' => 'image',
+            'cardinality' => 1,
+
+        ),
+    );
+}
+
+function media_entity_info_alter(&$entity_info)
+{
+    // Add our new view mode to the list of view modes...
+    $entity_info['node']['view modes']['media_list'] = array(
+        'label' => t('media List'),
+        'custom settings' => TRUE,
+    );
+}
+
+function _media_installed_instances($type)
+{
+    return array(
+        'media_image' => array(
+            'field_name' => $type.'_image',
+            'label' => t('Uploaded image '),
+            'required' => FALSE,
+            'settings' => array(
+                'image_style' => 'media_style',
+
+            ),
+            'widget' => array(
+                'type' => 'image_image',
+                'weight' => 2.10,
+            ),
+        ),
+    );
+}
+
+
+function media_block_view($delta = '')
+{
+    // This example is adapted from node.module.
+    $block = array();
+
+    switch ($delta) {
+
+        case 'recent_media':
+            $block['subject'] = t('Recent content');
+            $type = "media";
+
+            $result = db_query("SELECT nid FROM node WHERE type like '%s' and promote = 1 and status = 1  ORDER BY nid DESC limit 0,3 ", array($type));
+
+
+            foreach ($result as $rec) {
+                $nodes[] = node_load($rec->nid);
+            }
+
+
+            $block['content'] = theme('recent_media_block', array(
+                'nodes' => $nodes,
+            ));
+
+            break;
+    }
+    return $block;
+}
+
+function media_theme($existing, $type, $theme, $path)
+{
+    return array(
+        'media' => array(
+            'template' => 'tpl/media',
+            'variables' => array('nodes' => NULL),
+        ),
+    );
+}

@@ -1,0 +1,5 @@
+name = Monria Media
+description = Monria Media using CMS
+package = Monria
+dependencies[] = image
+core = 7.x
