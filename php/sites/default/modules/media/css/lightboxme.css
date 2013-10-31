@@ -1,0 +1,137 @@
+#bg {
+    background: none repeat scroll 0 0 #000000;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9001;
+}
+
+#lightbox-monria {
+    left: 0;
+    position: absolute;
+    top: 600px;
+    width: 100%;
+    z-index: 9005;
+    display:none;
+
+}
+#container {
+    margin:0 auto;
+    display:block;
+    position:relative;
+}
+#lightbox-monria img {
+
+}
+
+
+#cr-top-left {
+    background: url("../img/border-sides.png") repeat-x scroll -15px 0 rgba(0, 0, 0, 0);
+    height: 95px;
+    left: -22px;
+    position: absolute;
+    top: -30px;
+    width: 95px;
+    z-index: 3;
+}
+#cr-bottom-left {
+    background: url("../img/border-sides.png") repeat-x scroll -15px -111px rgba(0, 0, 0, 0);
+    bottom: -18px;
+    height: 95px;
+    left: -22px;
+    position: absolute;
+    width: 95px;
+    z-index: 3;
+}
+#cr-top-right {
+    background:url("../img/border-sides.png") repeat-x scroll -120px 2px rgba(0, 0, 0, 0);
+    top: -30px;
+    height: 95px;
+    right: -22px;
+    position: absolute;
+    width: 95px;
+    z-index: 3;
+}
+#cr-bottom-right {
+    background: url("../img/border-sides.png") repeat-x scroll -120px -111px rgba(0, 0, 0, 0);
+    bottom: -18px;
+    height: 95px;
+    right: -22px;
+    position: absolute;
+    width: 95px;
+    z-index: 3;
+}
+
+#m-top {
+
+    background: url("../img/border.jpg") repeat-x scroll 0px 0 rgba(0, 0, 0, 0);
+
+    left:0px;
+    position: absolute;
+    top: -13px;
+    height:15px;
+    z-index: 2;
+}
+#m-top-bg{
+
+    background: url("../img/border-up.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    height: 52px;
+    left: 0;
+    position: absolute;
+    top: -12px;
+    width: 400px;
+    z-index: 1;
+}
+#m-bottom-bg {
+    background: url("../img/border-up.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    height: 52px;
+    left: 0;
+    position: absolute;
+    bottom: -2px;
+    width: 400px;
+    z-index: 1;
+}
+#m-right{
+    background: url("../img/border-sides.png") repeat-y scroll -268px 0 rgba(0, 0, 0, 0);
+
+
+    right: -14px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    z-index: 2;
+}
+#m-bottom {
+    background: url("../img/border.jpg") repeat-x scroll 0px 0 rgba(0, 0, 0, 0);
+
+  left:0px;
+    position: absolute;
+    bottom: -10px;
+    height:15px;
+    z-index: 2;
+}
+#m-left {
+    background: url("../img/border-sides.png") repeat-y scroll -268px 0 rgba(0, 0, 0, 0);
+
+    left: -16px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    z-index: 2;
+}
+#close-lightbox {
+    background: url("../img/border-sides.png") no-repeat scroll -158px -235px rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 35px;
+    position: absolute;
+    right: 21px;
+    top: 0;
+    width: 35px;
+    z-index: 4;
+}
+
+#
