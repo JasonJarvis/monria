@@ -13,8 +13,8 @@ var ScreenshotCarousel = {
         this.element = $(element);
         this.config = config;
 // identify UI elements
-        this.ui.prevButton = this.element.find("#screenshot-prev");
-        this.ui.nextButton = this.element.find("#screenshot-next");
+        this.ui.prevButton = $(document).find("#screenshot-prev");
+        this.ui.nextButton = $(document).find("#screenshot-next");
         this.ui.zoomButton = this.element.find("#screenshot-zoom");
         this.ui.indicators = this.element.find("#screenshot-indicators");
         // traverse the dom and find the items
@@ -25,9 +25,16 @@ var ScreenshotCarousel = {
 
     initEvents: function () {
         var _this = this;
-
+        this.ui.prevButton.on("click.carousel", function () {
+            _this.prev();
+        });
+        this.ui.nextButton.on("click.carousel", function () {
+            _this.next();
+        });
+        this.ui.zoomButton.on("click.carousel", function () {
+            _this.zoom();
+        });
         this.ui.indicators.on("click.carousel", ".screenshot-indicator", function (event) {
-
             var item = (event.target.className.indexOf('screenshot-indicator') !== -1) ? event.target : event.target.parentNode;
             _this.showItem($(item).data("index"));
         });
@@ -81,3 +88,36 @@ var ScreenshotCarousel = {
         this.indicators[this.currentIndex].element.addClass("active");
     }
 };
+$(function () {
+    $('#screenshot-zoom').click(function (e) {
+
+        //$('#sign_up').find('input:first').focus()
+        var lightbox = $('#lightbox-monria');
+        var img = new Image();
+        img.onload = function () {
+            width = this.width;
+            height = this.height;
+            $('#bg').fadeIn();
+            lightbox.fadeIn();
+            lightbox.children('#container').css('width', width);
+            lightbox.children('#container').css('height', height);
+            lightbox.children('#container').children('#m-top').css('width', width);
+            lightbox.children('#container').children('#m-top-bg').css('width', width);
+            lightbox.children('#container').children('#m-bottom-bg').css('width', width);
+            lightbox.children('#container').children('#m-bottom').css('width', width);
+            lightbox.children('#container').children('#m-left').css('height', height);
+            lightbox.children('#container').children('#m-right').css('height', height);
+            lightbox.children('#container').children('img').attr('src', img.src);
+        }
+        img.src = $('.item.active').data('full');
+
+
+    });
+
+    $('#close-lightbox').click(function (e) {
+        var lightbox = $('#lightbox-monria');
+        $('#bg').fadeOut();
+        lightbox.fadeOut();
+        lightbox.children('#container').children('img').attr('src', '');
+    });
+});

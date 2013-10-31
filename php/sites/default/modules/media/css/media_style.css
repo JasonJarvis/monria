@@ -183,3 +183,54 @@ position:absolute;
 .wallpaper:hover {
     background-position: -582px -121px;
 }
+
+.overlay-controls{
+    width:816px;
+    height:539px;
+    position:absolute;
+    z-index:11;
+}
+
+.overlay-controls .prev {
+    background: url("../img/screenshot-overlay.png") no-repeat scroll 0 center rgba(0, 0, 0, 0);
+    height: 539px;
+    position: absolute;
+    top: 0;
+    width: 140px;
+    left:42px;
+    opacity:0.35;
+}
+.overlay-controls .prev:hover{
+
+    opacity:1;
+
+}
+
+.overlay-controls .next {
+    background: url("../img/screenshot-overlay.png") no-repeat scroll -164px center rgba(0, 0, 0, 0);
+    height: 539px;
+    position: absolute;
+    right: 41px;
+    top: 0;
+    width: 110px;
+
+    opacity:0.35;
+}
+.overlay-controls .next:hover{
+
+    opacity:1;
+
+    }
+
+.overlay-controls .zoom {
+
+    height: 539px;
+    width: 516px;
+    left:160px;
+    position:   absolute;
+}
+
+.overlay-controls .zoom:hover {
+    background: url("../img/magnify.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+}
+
