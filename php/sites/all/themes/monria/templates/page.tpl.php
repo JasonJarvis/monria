@@ -61,3 +61,22 @@
         </div>
     </div>
 </div>
+
+<div id="bg"></div>
+<div id="lightbox-monria" >
+    <div id="container">
+        <img src="">
+        <div id="m-top"  ></div>
+        <div id="m-top-bg"  ></div>
+        <div id="m-bottom-bg"  ></div>
+        <div id="m-right" ></div>
+        <div id="m-bottom" ></div>
+        <div id="m-left"  ></div>
+        <div id="cr-top-left" ></div>
+        <div id="cr-top-right" ></div>
+        <div id="cr-bottom-left"  ></div>
+        <div id="cr-bottom-right"  ></div>
+        <div id="close-lightbox" ></div>
+    </div>
+
+</div>
