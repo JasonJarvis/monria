@@ -134,4 +134,21 @@
     z-index: 4;
 }
 
-#
+#arrow-right {
+    background: url("../img/border-sides.png") repeat-y scroll -61px -232px rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 44px;
+    right: 14px;
+    position: absolute;
+    width: 41px;
+    z-index: 5;
+}
+#arrow-left {
+    background: url("../img/border-sides.png") repeat-y scroll -21px -232px rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 44px;
+    left: 14px;
+    position: absolute;
+    width: 41px;
+    z-index: 5;
+}

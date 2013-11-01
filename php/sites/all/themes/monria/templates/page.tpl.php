@@ -67,6 +67,8 @@
     <div id="container">
         <img src="">
         <div id="m-top"  ></div>
+        <div id="arrow-left"  ></div>
+        <div id="arrow-right"  ></div>
         <div id="m-top-bg"  ></div>
         <div id="m-bottom-bg"  ></div>
         <div id="m-right" ></div>

@@ -1,3 +1,4 @@
+var items =0 ;
 var ScreenshotCarousel = {
     element: null,
     ui: {},
@@ -40,7 +41,7 @@ var ScreenshotCarousel = {
         });
     },
     loadItems: function () {
-        var items = this.element.find("img.item");
+       items = this.element.find("img.item");
 // Build local array of images
         for (var i = 0; i < items.length; i++) {
             this.createItem(items[i]);
@@ -119,5 +120,13 @@ $(function () {
         $('#bg').fadeOut();
         lightbox.fadeOut();
         lightbox.children('#container').children('img').attr('src', '');
+    });
+    $('#lightbox-monria').children('#container').children('#arrow-right').click(function (e) {
+        $( "#screenshot-next" ).trigger( "click" );
+        $( "#screenshot-zoom" ).trigger( "click" );
+    });
+    $('#lightbox-monria').children('#container').children('#arrow-left').click(function (e) {
+        $( "#screenshot-prev" ).trigger( "click" );
+        $( "#screenshot-zoom" ).trigger( "click" );
     });
 });
