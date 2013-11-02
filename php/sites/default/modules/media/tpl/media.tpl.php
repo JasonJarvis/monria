@@ -7,9 +7,9 @@
 <?php $path = base_path() . drupal_get_path('module', 'media'); ?>
 <div class="media_title"></div>
 <div class="media_menu">
-    <a href="" class="images_link"></a>
+    <a href="<?php echo base_path(); ?>media" class="images_link <?php echo $type!='video'?'fixed':'' ?>" ></a>
     <a href="" class="story_link"></a>
-    <a href="" class="videos_link"></a>
+    <a href="<?php echo base_path(); ?>media/video" class="videos_link <?php echo $type=='video'?'fixed':'' ?>"></a>
 </div>
 
 <div class="media_slide">
@@ -46,11 +46,13 @@
     </div>
 
 </div>
+<?php if($type!='video') : ?>
 <div class="btn_wrapper">
     <a href="<?php echo base_path(); ?>media/artwork" class="artwork"></a>
     <a href="<?php echo base_path(); ?>media/screenshot" class="screenshots"></a>
     <a href="<?php echo base_path(); ?>media/wallpaper" class="wallpaper"></a>
 </div>
+<?php endif; ?>
 <script>
     var screenshotCarousel = ScreenshotCarousel.build("#screenshot-carousel");
 </script>

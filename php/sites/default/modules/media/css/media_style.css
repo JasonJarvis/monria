@@ -1,9 +1,10 @@
 .screenshot-carousel .screen .item.active {
     opacity: 1;
     z-index: 1;
-    left:0px;
+    left: 0px;
 }
-.screenshot-carousel{
+
+.screenshot-carousel {
     left: 20px;
     position: absolute;
     top: 32px;
@@ -41,7 +42,7 @@
 }
 
 .images_link {
-    background: url("../img/vis.png") no-repeat scroll 0 0 ;
+    background: url("../img/vis.png") no-repeat scroll 0 0;
     display: block;
     height: 26px;
     left: 160px;
@@ -49,9 +50,11 @@
     top: 32px;
     width: 200px;
 }
-
+.images_link.fixed {
+    background-position: 0px -38px;
+}
 .story_link {
-    background: url("../img/vis.png") no-repeat scroll -307px 0 ;
+    background: url("../img/vis.png") no-repeat scroll -307px 0;
     display: block;
     height: 26px;
     left: 440px;
@@ -61,7 +64,7 @@
 }
 
 .videos_link {
-    background: url("../img/vis.png") no-repeat scroll -580px 0 ;
+    background: url("../img/vis.png") no-repeat scroll -580px 0;
     display: block;
     height: 26px;
     left: 730px;
@@ -69,13 +72,8 @@
     top: 32px;
     width: 200px;
 }
-
-.media_menu .image_link {
-    position: absolute;
-    background: url(../img/vis.png) no-repeat;
-    width: 200px;
-    height: 100px;
-    background-position: 10px 10px;
+.videos_link.fixed {
+    background-position: -580px -38px;
 }
 
 .media_menu .image_link {
@@ -93,26 +91,34 @@
     height: 100px;
     background-position: 10px 10px;
 }
+
+.media_menu .image_link {
+    position: absolute;
+    background: url(../img/vis.png) no-repeat;
+    width: 200px;
+    height: 100px;
+    background-position: 10px 10px;
+}
+
 .media_slide {
-    position:relative;
-    width:816px;
-    height:639px;
-    left:88px;
-    top:45px;
+    position: relative;
+    width: 816px;
+    height: 639px;
+    left: 88px;
+    top: 45px;
 
 }
+
 .media_border {
-    background:url('../img/frame.png');
-    width:816px;
-    height:539px;
-position:absolute;
-    z-index:10;
+    background: url('../img/frame.png');
+    width: 816px;
+    height: 539px;
+    position: absolute;
+    z-index: 10;
 }
-
-
 
 #screenshot-indicators {
-    background: url("../img/indicator.png") no-repeat scroll 0 -71px ;
+    background: url("../img/indicator.png") no-repeat scroll 0 -71px;
     bottom: 38px;
     display: block;
     height: 60px;
@@ -123,20 +129,21 @@ position:absolute;
 
 .screenshot-carousel {
     text-align: center;
-    height:610px;
+    height: 610px;
 }
+
 .screenshot-indicator {
-    background: url("../img/indicator.png") no-repeat scroll -239px -9px ;
+    background: url("../img/indicator.png") no-repeat scroll -239px -9px;
     cursor: pointer;
     display: inline-block;
     height: 65px;
     width: 63px;
 }
 
-
 .screenshot-carousel .indicators .screenshot-indicator.active {
     background-position: -167px -9px;
 }
+
 .btn_wrapper {
 
     height: 145px;
@@ -146,8 +153,9 @@ position:absolute;
     width: 998px;
 
 }
+
 .artwork {
-    background: url("../img/buttons.png") no-repeat scroll 0 0 ;
+    background: url("../img/buttons.png") no-repeat scroll 0 0;
     cursor: pointer;
     display: inline-block;
     height: 122px;
@@ -161,76 +169,82 @@ position:absolute;
 }
 
 .screenshots {
-    background: url("../img/buttons.png") no-repeat scroll -290px 0 ;
+    background: url("../img/buttons.png") no-repeat scroll -290px 0;
     cursor: pointer;
     display: inline-block;
     height: 122px;
     width: 216px;
-    margin-right: 50px;    margin-bottom: 22px;
+    margin-right: 50px;
+    margin-bottom: 22px;
 }
 
 .screenshots:hover {
     background-position: -290px -121px;
 }
+
 .wallpaper {
-    background: url("../img/buttons.png") no-repeat scroll -582px 0 ;
+    background: url("../img/buttons.png") no-repeat scroll -582px 0;
     cursor: pointer;
     display: inline-block;
     height: 122px;
     width: 216px;
-    margin-right: 50px;    margin-bottom: 22px;
+    margin-right: 50px;
+    margin-bottom: 22px;
 }
+
 .wallpaper:hover {
     background-position: -582px -121px;
 }
 
-.overlay-controls{
-    width:816px;
-    height:539px;
-    position:absolute;
-    z-index:11;
+.overlay-controls {
+    width: 816px;
+    height: 539px;
+    position: absolute;
+    z-index: 11;
 }
 
 .overlay-controls .prev {
-    background: url("../img/screenshot-overlay.png") no-repeat scroll 0 center ;
+    background: url("../img/screenshot-overlay.png") no-repeat scroll 0 center;
     height: 539px;
     position: absolute;
     top: 0;
     width: 140px;
-    left:42px;
-    opacity:0.35;
+    left: 42px;
+    opacity: 0.35;
 }
-.overlay-controls .prev:hover{
 
-    opacity:1;
+.overlay-controls .prev:hover {
+
+    opacity: 1;
 
 }
 
 .overlay-controls .next {
-    background: url("../img/screenshot-overlay.png") no-repeat scroll -164px center ;
+    background: url("../img/screenshot-overlay.png") no-repeat scroll -164px center;
     height: 539px;
     position: absolute;
     right: 41px;
     top: 0;
     width: 110px;
 
-    opacity:0.35;
+    opacity: 0.35;
 }
-.overlay-controls .next:hover{
 
-    opacity:1;
+.overlay-controls .next:hover {
 
-    }
+    opacity: 1;
+
+}
 
 .overlay-controls .zoom {
 
     height: 539px;
     width: 516px;
-    left:160px;
-    position:   absolute;
+    left: 160px;
+    position: absolute;
 }
 
 .overlay-controls .zoom:hover {
-    background: url("../img/magnify.png") no-repeat scroll center center ;
+    background: url("../img/magnify.png") no-repeat scroll center center;
 }
 
