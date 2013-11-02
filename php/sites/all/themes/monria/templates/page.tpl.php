@@ -1,38 +1,16 @@
-
 <div class="gamecontent_reposition_inner">
 
     <div class="navigation">
 
         <div class="bar">
-            <a class="home" href="<?php echo base_path() ?>"></a>
-            <a class="download" href=""></a>
-            <a class="forum" href=""></a>
-            <a class="login" href=""></a>
-            <a class="guide" href=""></a>
-            <a class="media" href=""></a>
-            <a class="about" href=""></a>
+        <?php include('menu.php'); ?>
         </div>
 
     </div>
     <div class="bg1">
         <div id="flashContent">
             <div id="flashBox">
-
-                <span class="card_left_span">Screenshots</span>
-                <span class="card_middle_span">Video</span>
-                <span class="card_right_span">Story</span>
-
-                <a href="download/?ccode=affimoon130401" class="card_left">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_middle">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_right">
-
-                </a>
-
-
+                <?php include('bg1.php'); ?>
             </div>
         </div>
 
@@ -46,11 +24,14 @@
     </div>
 
     <div class="bottom">
-        <div id="footer"><img width="1000" height="1" style="margin-bottom: 20px" src="<?php echo path_to_theme() ;?>/img/logos/footergradient.jpg"
+        <div id="footer"><img width="1000" height="1" style="margin-bottom: 20px"
+                              src="<?php echo path_to_theme(); ?>/img/logos/footergradient.jpg"
                               alt="">
             <a target="_blank" href="http://www.mindark.com"><img width="115" height="35" style="display:inline;"
-                                                                  src="<?php echo path_to_theme() ;?>/img/logos/mindark_footer_logo.jpg" alt=""></a>
-            <img width="155" height="35" style="display:inline;" src="<?php echo path_to_theme() ;?>/img/logos/eu_footer_logo.jpg" alt=""><br>
+                                                                  src="<?php echo path_to_theme(); ?>/img/logos/mindark_footer_logo.jpg"
+                                                                  alt=""></a>
+            <img width="155" height="35" style="display:inline;"
+                 src="<?php echo path_to_theme(); ?>/img/logos/eu_footer_logo.jpg" alt=""><br>
             <br>
             <span id="legal-links"><a target="_blank" href="http://legal.entropiauniverse.com">Rules and Policies</a> | <a
                     href="/legal/">Legal Notice</a></span>
@@ -62,23 +43,24 @@
     </div>
 </div>
 <div id="bg" style="display:none"></div>
-<div id="lightbox-monria" style="display:none" >
+<div id="lightbox-monria" style="display:none">
     <div id="container">
         <img src="">
+
         <div id="inner"></div>
-        <div id="m-top"  ></div>
-        <div id="arrow-left"  ></div>
-        <div id="arrow-right"  ></div>
-        <div id="m-top-bg"  ></div>
-        <div id="m-bottom-bg"  ></div>
-        <div id="m-right" ></div>
-        <div id="m-bottom" ></div>
-        <div id="m-left"  ></div>
-        <div id="cr-top-left" ></div>
-        <div id="cr-top-right" ></div>
-        <div id="cr-bottom-left"  ></div>
-        <div id="cr-bottom-right"  ></div>
-        <div id="close-lightbox" ></div>
+        <div id="m-top"></div>
+        <div id="arrow-left"></div>
+        <div id="arrow-right"></div>
+        <div id="m-top-bg"></div>
+        <div id="m-bottom-bg"></div>
+        <div id="m-right"></div>
+        <div id="m-bottom"></div>
+        <div id="m-left"></div>
+        <div id="cr-top-left"></div>
+        <div id="cr-top-right"></div>
+        <div id="cr-bottom-left"></div>
+        <div id="cr-bottom-right"></div>
+        <div id="close-lightbox"></div>
     </div>
 
 </div>

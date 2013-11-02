@@ -10,35 +10,14 @@
     <div class="navigation">
 
         <div class="bar">
-            <a class="home" href=""></a>
-            <a class="download" href=""></a>
-            <a class="forum" href=""></a>
-            <a class="login" href=""></a>
-            <a class="guide" href=""></a>
-            <a class="media" href=""></a>
-            <a class="about" href=""></a>
+            <?php include('menu.php'); ?>
         </div>
 
     </div>
     <div class="bg1">
         <div id="flashContent" >
             <div id="flashBox">
-                <a href="register/?ccode=affimoon130401" class="top_register"></a>
-                <a href="download/?ccode=affimoon130401" class="top_download"></a>
-
-                <span class="card_left_span">Screenshots</span>
-                <span class="card_middle_span">Video</span>
-                <span class="card_right_span">Story</span>
-
-                <a href="download/?ccode=affimoon130401" class="card_left">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_middle">
-
-                </a>
-                <a href="download/?ccode=affimoon130401" class="card_right">
-
-                </a>
+                <?php include('bg1.php'); ?>
 
                 <div id="video_container">
                     <video id="flashObj" class="video-background" loop="loop" webkit-playsinline="true"
