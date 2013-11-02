@@ -46,8 +46,10 @@
     margin-left: 57px;
     margin-top: -437px;
     min-height: 730px;
-    padding-top: 0;
     overflow: hidden;
+    padding-top: 0;
+    width: 1014px;
+    font-family:Arial;
 }
 
 .gamecontent_reposition_inner .news_content {
