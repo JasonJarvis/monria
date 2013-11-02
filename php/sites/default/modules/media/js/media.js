@@ -165,3 +165,18 @@ $(function () {
         $( "#screenshot-zoom" ).trigger( "click" );
     });
 });
+
+var _preventEvent = false;
+
+
+function setScrollLeft(amount) {
+    _preventEvent = true;
+    window.scrollLeft = amount;
+}
+
+window.onscroll = function () {
+    if (_preventEvent) {
+        _preventEvent = false;
+        return;
+    }
+}

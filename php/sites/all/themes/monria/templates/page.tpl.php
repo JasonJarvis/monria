@@ -1,4 +1,6 @@
+
 <div class="gamecontent_reposition_inner">
+
     <div class="navigation">
 
         <div class="bar">
@@ -35,16 +37,15 @@
         </div>
 
     </div>
-    <div class="bg2"></div>
-    <div class="bg3">
 
-    </div>
     <div class="content">
-
+        <div id="repeater-offset"></div>
         <div class="reposition monria">
             <?php print render($page['content']); ?>
         </div>
-        <div class="bottom">
+    </div>
+
+    <div class="bottom">
         <div id="footer"><img width="1000" height="1" style="margin-bottom: 20px" src="<?php echo path_to_theme() ;?>/img/logos/footergradient.jpg"
                               alt="">
             <a target="_blank" href="http://www.mindark.com"><img width="115" height="35" style="display:inline;"
@@ -58,12 +59,10 @@
                 respective owners.<br>
                 2013 Monria. All rights reserved.</p>
         </div>
-        </div>
     </div>
 </div>
-
-<div id="bg"></div>
-<div id="lightbox-monria" >
+<div id="bg" style="display:none"></div>
+<div id="lightbox-monria" style="display:none" >
     <div id="container">
         <img src="">
         <div id="inner"></div>
