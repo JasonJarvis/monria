@@ -45,8 +45,8 @@
 
             </div>
             <div class="btns_content">
-                <a href="#" class="btn_faq"></a>
-                <a href="#" class="btn_forum"></a>
+                <a href="<?php echo base_path();?>media" class="btn_faq"></a>
+                <a href="<?php echo base_path();?>forum" class="btn_forum"></a>
             </div>
 
         </div>
