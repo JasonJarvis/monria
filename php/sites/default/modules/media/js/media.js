@@ -1,4 +1,12 @@
 var items =0 ;
+if (typeof Object.create !== 'function') {
+    Object.create = function (o) {
+        function F() {}
+        F.prototype = o;
+        return new F();
+    };
+}
+
 var ScreenshotCarousel = {
     element: null,
     ui: {},
@@ -6,6 +14,7 @@ var ScreenshotCarousel = {
     indicators: [],
     currentIndex: null,
     build: function (element, config) {
+
         var instance = Object.create(ScreenshotCarousel);
         instance.init(element, config);
         return instance;
@@ -110,7 +119,26 @@ $(function () {
             lightbox.children('#container').children('#m-right').css('height', height);
             lightbox.children('#container').children('img').attr('src', img.src);
         }
-        img.src = $('.item.active').data('full');
+        if($("#isVideo" ).length == 0) {
+            //it doesn't exist
+            img.src = $('.item.active').data('full');
+        } else {
+            width =  640;
+            height = 390;
+            $('#bg').fadeIn();
+            lightbox.fadeIn();
+            lightbox.children('#container').css('width', width);
+            lightbox.children('#container').css('height', height);
+            lightbox.children('#container').children('#m-top').css('width', width);
+            lightbox.children('#container').children('#m-top-bg').css('display', 'none');
+            lightbox.children('#container').children('#m-bottom-bg').css('display','none');
+            lightbox.children('#container').children('#m-bottom').css('width', width);
+            lightbox.children('#container').children('#m-left').css('height', height);
+            lightbox.children('#container').children('#m-right').css('height', height);
+            lightbox.children('#container').children('img').remove();
+            lightbox.children('#container').children('#inner').html('<iframe id="ytplayer" type="text/html" width="640" height="390" src="'+$('.item.active').data('full')+'" frameborder="0"/>');
+        }
+
 
 
     });

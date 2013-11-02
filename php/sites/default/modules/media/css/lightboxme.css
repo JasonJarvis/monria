@@ -30,7 +30,7 @@
 
 
 #cr-top-left {
-    background: url("../img/border-sides.png") repeat-x scroll -15px 0 rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-x scroll -15px 0 ;
     height: 95px;
     left: -22px;
     position: absolute;
@@ -39,7 +39,7 @@
     z-index: 3;
 }
 #cr-bottom-left {
-    background: url("../img/border-sides.png") repeat-x scroll -15px -111px rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-x scroll -15px -111px ;
     bottom: -18px;
     height: 95px;
     left: -22px;
@@ -48,7 +48,7 @@
     z-index: 3;
 }
 #cr-top-right {
-    background:url("../img/border-sides.png") repeat-x scroll -120px 2px rgba(0, 0, 0, 0);
+    background:url("../img/border-sides.png") repeat-x scroll -120px 2px ;
     top: -30px;
     height: 95px;
     right: -22px;
@@ -57,7 +57,7 @@
     z-index: 3;
 }
 #cr-bottom-right {
-    background: url("../img/border-sides.png") repeat-x scroll -120px -111px rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-x scroll -120px -111px ;
     bottom: -18px;
     height: 95px;
     right: -22px;
@@ -68,7 +68,7 @@
 
 #m-top {
 
-    background: url("../img/border.jpg") repeat-x scroll 0px 0 rgba(0, 0, 0, 0);
+    background: url("../img/border.jpg") repeat-x scroll 0px 0 ;
 
     left:0px;
     position: absolute;
@@ -78,7 +78,7 @@
 }
 #m-top-bg{
 
-    background: url("../img/border-up.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    background: url("../img/border-up.png") repeat-x scroll 0 4px ;
     height: 52px;
     left: 0;
     position: absolute;
@@ -87,7 +87,7 @@
     z-index: 1;
 }
 #m-bottom-bg {
-    background: url("../img/border-up.png") repeat-x scroll 0 4px rgba(0, 0, 0, 0);
+    background: url("../img/border-up.png") repeat-x scroll 0 4px ;
     height: 52px;
     left: 0;
     position: absolute;
@@ -96,7 +96,7 @@
     z-index: 1;
 }
 #m-right{
-    background: url("../img/border-sides.png") repeat-y scroll -268px 0 rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-y scroll -268px 0 ;
 
 
     right: -14px;
@@ -106,7 +106,7 @@
     z-index: 2;
 }
 #m-bottom {
-    background: url("../img/border.jpg") repeat-x scroll 0px 0 rgba(0, 0, 0, 0);
+    background: url("../img/border.jpg") repeat-x scroll 0px 0 ;
 
   left:0px;
     position: absolute;
@@ -115,7 +115,7 @@
     z-index: 2;
 }
 #m-left {
-    background: url("../img/border-sides.png") repeat-y scroll -268px 0 rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-y scroll -268px 0 ;
 
     left: -16px;
     position: absolute;
@@ -124,7 +124,7 @@
     z-index: 2;
 }
 #close-lightbox {
-    background: url("../img/border-sides.png") no-repeat scroll -158px -235px rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") no-repeat scroll -158px -235px ;
     cursor: pointer;
     height: 35px;
     position: absolute;
@@ -135,7 +135,7 @@
 }
 
 #arrow-right {
-    background: url("../img/border-sides.png") repeat-y scroll -61px -232px rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-y scroll -61px -232px ;
     bottom: 0;
     height: 44px;
     right: 14px;
@@ -144,7 +144,7 @@
     z-index: 5;
 }
 #arrow-left {
-    background: url("../img/border-sides.png") repeat-y scroll -21px -232px rgba(0, 0, 0, 0);
+    background: url("../img/border-sides.png") repeat-y scroll -21px -232px ;
     bottom: 0;
     height: 44px;
     left: 14px;

@@ -22,13 +22,22 @@
     <div class="screenshot-carousel" id="screenshot-carousel">
         <div class="screen">
 
-            <?php foreach($nodes as $node):
+            <?php foreach ($nodes as $node):
 
                 ?>
+                <?php $name = $type . '_image';
+                $node_val = $node->$name;?>
 
-            <img class="item" src="<?php echo image_style_url('media_style',$node->artwork_image['und'][0]['filename']) ?>"
-                 data-full="<?php echo base_path().'/sites/default/files/'.$node->artwork_image['und'][0]['filename'] ?>" rel="lightbox-cats" data-title="Screenshots"/>
-            <?php  endforeach; ?>
+                <?php if($type!='video') : ?>
+                <img class="item" src="<?php echo image_style_url('media_style', $node_val['und'][0]['filename']) ?>"
+                     data-full="<?php echo base_path() . '/sites/default/files/' . $node_val['und'][0]['filename'] ?>"
+                     rel="lightbox-cats" data-title="Screenshots"/>
+                <?php else : ?>
+                <img class="item" id="isVideo" src="<?php echo image_style_url('media_style', $node_val['und'][0]['filename']) ?>"
+                     data-full="<?php echo $node->video['und'][0]['value'] ?>"
+                     rel="lightbox-cats" data-title="Screenshots"/>
+                <?php endif; ?>
+            <?php endforeach; ?>
         </div>
 
         <div id="screenshot-indicators" class="indicators">
@@ -38,9 +47,9 @@
 
 </div>
 <div class="btn_wrapper">
-<a href="<?php echo base_path(); ?>media/artwork" class="artwork"></a>
-<a href="<?php echo base_path(); ?>media/screenshot" class="screenshots"></a>
-<a href="<?php echo base_path(); ?>media/wallpaper" class="wallpaper"></a>
+    <a href="<?php echo base_path(); ?>media/artwork" class="artwork"></a>
+    <a href="<?php echo base_path(); ?>media/screenshot" class="screenshots"></a>
+    <a href="<?php echo base_path(); ?>media/wallpaper" class="wallpaper"></a>
 </div>
 <script>
     var screenshotCarousel = ScreenshotCarousel.build("#screenshot-carousel");

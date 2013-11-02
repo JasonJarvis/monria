@@ -66,6 +66,7 @@
 <div id="lightbox-monria" >
     <div id="container">
         <img src="">
+        <div id="inner"></div>
         <div id="m-top"  ></div>
         <div id="arrow-left"  ></div>
         <div id="arrow-right"  ></div>

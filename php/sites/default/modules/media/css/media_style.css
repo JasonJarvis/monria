@@ -41,7 +41,7 @@
 }
 
 .images_link {
-    background: url("../img/vis.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/vis.png") no-repeat scroll 0 0 ;
     display: block;
     height: 26px;
     left: 160px;
@@ -51,7 +51,7 @@
 }
 
 .story_link {
-    background: url("../img/vis.png") no-repeat scroll -307px 0 rgba(0, 0, 0, 0);
+    background: url("../img/vis.png") no-repeat scroll -307px 0 ;
     display: block;
     height: 26px;
     left: 440px;
@@ -61,7 +61,7 @@
 }
 
 .videos_link {
-    background: url("../img/vis.png") no-repeat scroll -580px 0 rgba(0, 0, 0, 0);
+    background: url("../img/vis.png") no-repeat scroll -580px 0 ;
     display: block;
     height: 26px;
     left: 730px;
@@ -112,7 +112,7 @@ position:absolute;
 
 
 #screenshot-indicators {
-    background: url("../img/indicator.png") no-repeat scroll 0 -71px rgba(0, 0, 0, 0);
+    background: url("../img/indicator.png") no-repeat scroll 0 -71px ;
     bottom: 38px;
     display: block;
     height: 60px;
@@ -126,7 +126,7 @@ position:absolute;
     height:610px;
 }
 .screenshot-indicator {
-    background: url("../img/indicator.png") no-repeat scroll -239px -9px rgba(0, 0, 0, 0);
+    background: url("../img/indicator.png") no-repeat scroll -239px -9px ;
     cursor: pointer;
     display: inline-block;
     height: 65px;
@@ -147,7 +147,7 @@ position:absolute;
 
 }
 .artwork {
-    background: url("../img/buttons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/buttons.png") no-repeat scroll 0 0 ;
     cursor: pointer;
     display: inline-block;
     height: 122px;
@@ -161,7 +161,7 @@ position:absolute;
 }
 
 .screenshots {
-    background: url("../img/buttons.png") no-repeat scroll -290px 0 rgba(0, 0, 0, 0);
+    background: url("../img/buttons.png") no-repeat scroll -290px 0 ;
     cursor: pointer;
     display: inline-block;
     height: 122px;
@@ -173,7 +173,7 @@ position:absolute;
     background-position: -290px -121px;
 }
 .wallpaper {
-    background: url("../img/buttons.png") no-repeat scroll -582px 0 rgba(0, 0, 0, 0);
+    background: url("../img/buttons.png") no-repeat scroll -582px 0 ;
     cursor: pointer;
     display: inline-block;
     height: 122px;
@@ -192,7 +192,7 @@ position:absolute;
 }
 
 .overlay-controls .prev {
-    background: url("../img/screenshot-overlay.png") no-repeat scroll 0 center rgba(0, 0, 0, 0);
+    background: url("../img/screenshot-overlay.png") no-repeat scroll 0 center ;
     height: 539px;
     position: absolute;
     top: 0;
@@ -207,7 +207,7 @@ position:absolute;
 }
 
 .overlay-controls .next {
-    background: url("../img/screenshot-overlay.png") no-repeat scroll -164px center rgba(0, 0, 0, 0);
+    background: url("../img/screenshot-overlay.png") no-repeat scroll -164px center ;
     height: 539px;
     position: absolute;
     right: 41px;
@@ -231,6 +231,6 @@ position:absolute;
 }
 
 .overlay-controls .zoom:hover {
-    background: url("../img/magnify.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    background: url("../img/magnify.png") no-repeat scroll center center ;
 }
 
