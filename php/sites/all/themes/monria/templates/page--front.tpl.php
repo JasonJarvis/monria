@@ -17,7 +17,7 @@
     <div class="bg1">
         <div id="flashContent" >
             <div id="flashBox">
-                <?php include('bg1.php'); ?>
+                <?php include('boxes.php'); ?>
 
                 <div id="video_container">
                     <video id="flashObj" class="video-background" loop="loop" webkit-playsinline="true"
