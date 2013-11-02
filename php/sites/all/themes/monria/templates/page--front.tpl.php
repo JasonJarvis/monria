@@ -17,6 +17,8 @@
     <div class="bg1">
         <div id="flashContent" >
             <div id="flashBox">
+                <a href="<?php echo base_path(); ?>register/?ccode=affimoon130401" class="top_register"></a>
+                <a href="<?php echo base_path(); ?>download/?ccode=affimoon130401" class="top_download"></a>
                 <?php include('boxes.php'); ?>
 
                 <div id="video_container">
