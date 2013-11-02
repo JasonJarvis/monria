@@ -52,6 +52,9 @@
     font-family:Arial;
 }
 
+.gamecontent_reposition_inner .reposition .node {
+   width:980px;
+}
 .gamecontent_reposition_inner .news_content {
     top:30px;
 }
