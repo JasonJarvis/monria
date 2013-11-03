@@ -27,12 +27,12 @@
 
 }
 .block_news_right {
-    position: absolute;
-    left: 82px;
-    top: 5px;
-    width: 220px;
-    height: 72px;
     display: table;
+    height: 72px;
+    left: 116px;
+    position: absolute;
+    top: 5px;
+    width: 200px;
 
 }
 .block_news_right a {
