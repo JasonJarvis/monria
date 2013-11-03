@@ -1,1 +1,0 @@
-window.CKEDITOR_BASEPATH = '/php/sites/all/libraries/ckeditor/';

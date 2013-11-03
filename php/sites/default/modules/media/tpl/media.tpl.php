@@ -48,9 +48,7 @@
 </div>
 <?php if($type!='video') : ?>
 <div class="btn_wrapper">
-    <a href="<?php echo base_path(); ?>media/artwork" class="artwork"></a>
-    <a href="<?php echo base_path(); ?>media/screenshot" class="screenshots"></a>
-    <a href="<?php echo base_path(); ?>media/wallpaper" class="wallpaper"></a>
+
 </div>
 <?php endif; ?>
 <script>

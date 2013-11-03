@@ -42,7 +42,7 @@
 }
 
 .images_link {
-    background: url("../img/vis.png") no-repeat scroll 0 0;
+    background: url("../img/vis.png") no-repeat scroll 0 -38px;
     display: block;
     height: 26px;
     left: 160px;
@@ -51,10 +51,10 @@
     width: 200px;
 }
 .images_link.fixed {
-    background-position: 0px -38px;
+    background-position: 0px 0px;
 }
 .story_link {
-    background: url("../img/vis.png") no-repeat scroll -307px 0;
+    background: url("../img/vis.png") no-repeat scroll -307px  -38px;
     display: block;
     height: 26px;
     left: 440px;
@@ -62,9 +62,12 @@
     top: 32px;
     width: 200px;
 }
+.story_link.fixed {
+    background-position: -307px 0;
+}
 
 .videos_link {
-    background: url("../img/vis.png") no-repeat scroll -580px 0;
+    background: url("../img/vis.png") no-repeat scroll -580px -38px;
     display: block;
     height: 26px;
     left: 730px;
@@ -73,7 +76,7 @@
     width: 200px;
 }
 .videos_link.fixed {
-    background-position: -580px -38px;
+    background-position: -580px -0px;
 }
 
 .media_menu .image_link {
