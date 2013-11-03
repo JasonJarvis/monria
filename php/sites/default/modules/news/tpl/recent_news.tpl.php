@@ -10,6 +10,7 @@
                 <h4> <a href="<?php echo base_path() ?>news_detail/<?php echo $node->nid; ?>"> <?php echo $node->title;   ?></a></h4>
                 <?php echo $node->body['und'][0]['safe_summary'];   ?>
             </div>
+            <a href="<?php echo base_path() ?>news_detail/<?php echo $node->nid; ?>" class="single_read_more">Read More..</a>
         </div>
     <?php endforeach; ?>
     <div class="read_more_news">

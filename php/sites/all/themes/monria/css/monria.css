@@ -453,3 +453,14 @@ div#footer a:hover {
     top: -11px;
     width: 200px;
 }
+
+.single_read_more {
+    color:white; font-size:12px; bottom:0px; position:absolute;
+    text-decoration: none;
+    color:lightblue;
+
+}
+.single_read_more:hover {
+text-decoration: underline;
+
+}
