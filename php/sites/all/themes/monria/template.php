@@ -16,6 +16,13 @@ function monria_preprocess_page(&$vars) {
    }
 }
 
+function  monria_preprocess(&$variables) {
+    $variables['code'] = 'affimoon130401';
+    if(isset($_GET['code'])) {
+        $variables['code'] = filter_input(INPUT_GET, 'code');
+    }
+
+}
 
 function monria_preprocess_html(&$vars) {
     switch(arg(0)) {

@@ -10,7 +10,7 @@
     <a href="<?php echo base_path() ?>media/video" class="card_middle">
 
     </a>
-    <a href="download/?ccode=affimoon130401" class="card_right">
+    <a href="<?php echo base_path() ?>media/story" class="card_right">
 
     </a>
 
