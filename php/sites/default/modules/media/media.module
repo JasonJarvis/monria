@@ -49,6 +49,13 @@
                 'title_label' => t('Monria Video'),
                 'locked' => TRUE,
             ),
+            'story' => array(
+                'name' => t('Monria Video'),
+                'base' => 'media',
+                'description' => t('Add Video to Monria website'),
+                'title_label' => t('Monria Video'),
+                'locked' => TRUE,
+            ),
         );
     }
 
@@ -83,12 +90,30 @@
         $renderable_array = array();
         // We query the database and find all of the nodes for the type we defined.
         $sql = 'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status order by nid DESC';
-        $result = db_query($sql,
-            array(
-                ':type' => $type,
-                ':status' => 1,
-            )
-        );
+
+        if($type=='story') {
+            $type='basic_page';
+            $sql =  'SELECT nid FROM {node} n WHERE n.type = :type AND n.status = :status and n.title = :title order by nid DESC';
+            $result = db_query($sql,
+                array(
+                    ':type' => $type,
+                    ':status' => 1,
+                    ':title' => 'story'
+                )
+            );
+            $type='story';
+        } else {
+            $result = db_query($sql,
+                array(
+                    ':type' => $type,
+                    ':status' => 1,
+
+                )
+            );
+        }
+
+
+
 
 
         $renderable_array['explanation'] = array();
