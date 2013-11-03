@@ -156,6 +156,14 @@ $(function () {
         lightbox.fadeOut();
         lightbox.children('#container').children('img').attr('src', '');
     });
+
+   $('#lightbox-monria').click(function (e) {
+        var lightbox = $('#lightbox-monria');
+        $('#bg').fadeOut();
+        lightbox.fadeOut();
+        lightbox.children('#container').children('img').attr('src', '');
+    });
+
     $('#lightbox-monria').children('#container').children('#arrow-right').click(function (e) {
         $( "#screenshot-next" ).trigger( "click" );
         $( "#screenshot-zoom" ).trigger( "click" );
