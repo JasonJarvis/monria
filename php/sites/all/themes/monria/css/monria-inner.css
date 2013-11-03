@@ -134,7 +134,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    z-index: -1;
+    z-index: 1;
 }
 
 .gamecontent_reposition_inner div#footer {
@@ -185,4 +185,62 @@
 #repeater-offset {
     position:relative;
     height:1px;
+}
+
+
+.footer_list_container{
+    float: left;
+    margin-right: 21px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 145px;
+}
+
+
+.footer_list_container ul {
+    float: left;
+    font-weight: bold;
+    line-height: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+
+.footer_list_container ul li span{
+    background:url(../images/bold_dot.png) left 8px no-repeat  ;
+    padding-left:12px;
+}
+
+.footer_list_container ul li a:link{
+    background:url(../images/light_dot.png) left 8px no-repeat;
+    padding-left:12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: white;
+}
+.footer_list_container ul li a:hover{
+
+    color: #fff9c2 !important;
+}
+.footer_list_container ul li a:visited{
+
+    color: #e4faff;
+}
+#site_map
+{
+    color: #ADD8E6;
+    direction: rtl;
+    display: block;
+    font-family: Arial;
+    font-size: 13px;
+    height: 100px;
+    left: 229px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+    position: relative;
+    top: 445px;
+    width: 833px;
+
 }
