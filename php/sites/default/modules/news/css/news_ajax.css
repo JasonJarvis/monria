@@ -4,6 +4,7 @@
     background: url(../img/trans.png) repeat;
     margin-top:6px;
     display:block;
+    position:relative;
 
 
 }
@@ -21,4 +22,21 @@
     text-decoration: none;
     font-family: arial;
     font-weight: bold;
+}
+.block_news_left {
+
+}
+.block_news_right {
+    position: absolute;
+    left: 82px;
+    top: 5px;
+    width: 220px;
+    height: 72px;
+    display: table;
+
+}
+.block_news_right a {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
 }
