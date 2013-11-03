@@ -78,7 +78,7 @@
     }
 
 
-    function media_page($type = 'artwork')
+    function media_page($type = 'screenshot')
     {
         $renderable_array = array();
         // We query the database and find all of the nodes for the type we defined.
