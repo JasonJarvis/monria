@@ -16,8 +16,6 @@
                 <a target="_blank" href="http://legal.entropiauniverse.com">Rules and Policies</a> | <a
                     href="http://legal.entropiauniverse.com/legal/legal_notice.xml/">Legal Notice</a>
             </span>
-
-    <p>Monria is trademark or registered trademark of Entropia. All other trademarks are the property of their
-        respective owners.<br>
-        2013 Monria. All rights reserved.</p>
+<br>
+        Copyright 2013 Monria. All rights reserved.</p>
 </div>
