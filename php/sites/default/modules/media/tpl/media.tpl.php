@@ -9,9 +9,9 @@
     <div class="media_menu">
         <a href="<?php echo base_path(); ?>media"
            class="images_link <?php echo ($type != 'video' and $type != 'story') ? 'fixed' : '' ?>"></a>
-        <a href="<?php echo base_path(); ?>media/story" class="story_link <?php echo $type == 'story' ? 'fixed' : '' ?>"></a>
-        <a href="<?php echo base_path(); ?>media/video"
+         <a href="<?php echo base_path(); ?>media/video"
            class="videos_link <?php echo $type == 'video' ? 'fixed' : '' ?>"></a>
+        <a href="<?php echo base_path(); ?>media/story" class="story_link <?php echo $type == 'story' ? 'fixed' : '' ?>"></a>
     </div>
 
 <?php if ($type != 'story') : ?>
