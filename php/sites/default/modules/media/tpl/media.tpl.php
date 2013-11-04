@@ -35,7 +35,7 @@
                     <?php if ($type != 'video') : ?>
                     <img class="item"
                          src="<?php echo image_style_url('media_style', $node_val['und'][0]['filename']) ?>"
-                         data-full="<?php echo base_path() . '/sites/default/files/' . $node_val['und'][0]['filename'] ?>"
+                         data-full="<?php echo base_path() . 'sites/default/files/' . $node_val['und'][0]['filename'] ?>"
                          rel="lightbox-cats" data-title="Screenshots"/>
                 <?php else : ?>
                     <img class="item" id="isVideo"

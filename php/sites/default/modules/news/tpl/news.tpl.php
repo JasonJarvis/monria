@@ -22,7 +22,7 @@
         <div class="news_block">
             <div class="img_wrapper">
                 <div class="border"></div>
-                <img height="152" width="225" src="<?php echo base_path().'/sites/default/files/'.$node->news_image['und'][0]['filename']; ?>">
+                <img height="152" width="225" src="<?php echo base_path().'sites/default/files/'.$node->news_image['und'][0]['filename']; ?>">
             </div>
             <div class="text_wrapper">
                 <h4> <a href="<?php echo base_path() ?>news_detail/<?php echo $node->nid; ?>"> <?php echo $node->title;   ?></a></h4>

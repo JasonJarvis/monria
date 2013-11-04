@@ -3,7 +3,7 @@
     <div class="news_ajax_block">
 <div class="block_news_left">
             <img height="65" width="90"
-                 src="<?php echo base_path() . '/sites/default/files/' . $node->news_image['und'][0]['filename']; ?>" >
+                 src="<?php echo base_path() . 'sites/default/files/' . $node->news_image['und'][0]['filename']; ?>" >
 </div>
 <div class="block_news_right">
 
