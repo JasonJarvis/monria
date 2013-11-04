@@ -19,7 +19,7 @@
         <div class="overlay-controls">
             <div id="screenshot-prev" class="prev"></div>
             <div id="screenshot-next" class="next"></div>
-            <div id="screenshot-zoom" class="zoom"></div>
+            <div id="screenshot-zoom" class="zoom <?php echo $type == 'video' ? 'play' : '' ?>"></div>
         </div>
 
         <div class="media_border"></div>

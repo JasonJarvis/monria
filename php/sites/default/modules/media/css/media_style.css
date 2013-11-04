@@ -251,3 +251,10 @@
     background: url("../img/magnify.png") no-repeat scroll center center;
 }
 
+.overlay-controls .play{
+
+    background: url("../img/play.png") no-repeat scroll center center;
+}
+.overlay-controls .play:hover {
+    background: url("../img/play.png") no-repeat scroll center center;
+}
