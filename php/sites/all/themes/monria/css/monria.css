@@ -126,11 +126,11 @@ body {
 .navigation .bar a.guide:hover {
     background-position: -1100px -161px;
 }
-.navigation .bar a.media {
+.navigation .bar a.support {
     right: 122px;
     width: 129px;
 }
-.navigation .bar a.media:hover {
+.navigation .bar a.support:hover {
     background-position: -1224px -161px;
 }
 .navigation .bar a.about {

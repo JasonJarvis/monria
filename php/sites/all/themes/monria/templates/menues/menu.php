@@ -3,5 +3,5 @@
 <a class="forum" href="http://monria.com/forum"></a>
 <a class="login" href=""></a>
 <a class="guide" href="<?php echo base_path() ?>guide"></a>
-<a class="media" href="https://account.entropiauniverse.com/support-faq/?ccode=<?php echo $code; ?>"></a>
+<a class="support" href="https://account.entropiauniverse.com/support-faq/?ccode=<?php echo $code; ?>"></a>
 <a class="about" href="<?php echo base_path() ?>about"></a>

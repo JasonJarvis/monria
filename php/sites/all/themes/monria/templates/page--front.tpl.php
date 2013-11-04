@@ -10,7 +10,7 @@
     <div class="navigation">
 
         <div class="bar">
-            <?php include('menu.php'); ?>
+            <?php include('menues/menu.php'); ?>
         </div>
 
     </div>
@@ -19,7 +19,7 @@
             <div id="flashBox">
                 <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" class="top_register"></a>
                 <a href="<?php echo base_path(); ?>download/?ccode=<?php echo $code; ?>" class="top_download"></a>
-                <?php include('boxes.php'); ?>
+                <?php include('menues/boxes.php'); ?>
 
                 <div id="video_container">
                     <video id="flashObj" class="video-background" loop="loop" webkit-playsinline="true"
