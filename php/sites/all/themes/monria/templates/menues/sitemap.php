@@ -21,8 +21,8 @@
             <li><span> Reach Us</span></li>
             <li><a href="<?php echo base_path(); ?>about">About</a></li>
             <li><a href="<?php echo base_path(); ?>">Contact</a></li>
-            <li><a href="<?php echo base_path(); ?>">Guide</a></li>
-            <li><a href="<?php echo base_path(); ?>">Support</a></li>
+            <li><a href="<?php echo base_path(); ?>guide">Guide</a></li>
+            <li><a href="https://account.entropiauniverse.com/support-faq/?ccode=<?php echo $code; ?>">Support</a></li>
         </ul>
     </div>
     <div class="footer_list_container">
