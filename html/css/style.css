@@ -232,7 +232,7 @@ width:100%;
 }
 
 .news_title {
-    background: url("../img//news/news.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img//news/news.png") repeat scroll 0 0;
     height: 27px;
     left: 107px;
     position: absolute;
@@ -275,7 +275,7 @@ width:100%;
 }
 
 .btns_content  a.btn_faq {
-    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top;
     display: block;
     height: 210px;
     left: 17px;
@@ -291,7 +291,7 @@ width:100%;
 }
 
 .btns_content  a.btn_forum{
-    background: url("../img/btn/hovers.png") no-repeat scroll left top rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") no-repeat scroll left top;
     display: block;
     height: 210px;
     right: 22px;
@@ -330,7 +330,7 @@ width:100%;
     height:190px;
     z-index: 2;
     position: absolute;
-    background: url("../img/news/frame.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/news/frame.png") no-repeat scroll 0 0;
 
 }
 
@@ -364,7 +364,7 @@ width:100%;
     display:block;
     height:34px;
     width:280px;
-    background: url("../img/news/Read-More-News-..png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/news/Read-More-News-..png") no-repeat scroll 0 0;
 
 }
 
@@ -385,7 +385,7 @@ width:100%;
 }
 
 #youtube, #youtube:hover, #facebook, #facebook:hover, #twitter, #twitter:hover {
-    background: url("../img/btn/social.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+    background: url("../img/btn/social.png") no-repeat scroll center top;
     width: 100px;
 }
 #youtube {
@@ -434,20 +434,20 @@ width:100%;
     opacity: 0;
 }
 .top_register {
-    background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/flash-hover-reg.png") repeat scroll 0 0;
     left: 41px;
     top: 41px;
 }
 
 .top_download{
-    background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0;
     top: 38px;
     left: -505px;
     top: 40px;
 }
 
 .card_left {
-    background: url("../img/btn/hovers.png") repeat scroll 5px 168px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll 5px 168px;
     height: 166px;
     left: -363px;
     top: 488px;
@@ -477,7 +477,7 @@ width:100%;
 }
 
 .card_middle {
-    background: url("../img/btn/hovers.png") repeat scroll -253px 187px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll -253px 187px;
     height: 166px;
     left: -110px;
     top: 469px;
@@ -486,7 +486,7 @@ width:100%;
 }
 
 .card_right {
-    background: url("../img/btn/hovers.png") repeat scroll -493px 168px rgba(0, 0, 0, 0);
+    background: url("../img/btn/hovers.png") repeat scroll -493px 168px;
     height: 166px;
     left: 125px;
     top: 488px;
@@ -494,7 +494,7 @@ width:100%;
 }
 
 .ship_content a {
-    background: url("../img/btn/more.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    background: url("../img/btn/more.png") repeat scroll 0 0;
     display: block;
     height: 25px;
     position: absolute;
