@@ -143,10 +143,10 @@ body {
 .gamecontent_reposition_inner div#footer {
 
     height: 100px;
-    left: 492px;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
     text-align: center;
-    top: 776px;
+    top: 666px;
     width: 1000px;
 }
 

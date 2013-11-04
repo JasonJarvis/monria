@@ -11,6 +11,7 @@
 
         <div class="bar">
             <?php include('menues/menu.php'); ?>
+            <?php include('menues/copyright.php'); ?>
         </div>
 
     </div>
