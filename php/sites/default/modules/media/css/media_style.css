@@ -57,8 +57,8 @@
     background: url("../img/vis.png") no-repeat scroll -307px  -38px;
     display: block;
     height: 26px;
-    left: 440px;
-    position: absolute;
+    left: 730px;
+    position: relative;
     top: 32px;
     width: 200px;
 }
@@ -70,8 +70,10 @@
     background: url("../img/vis.png") no-repeat scroll -580px -38px;
     display: block;
     height: 26px;
-    left: 730px;
-    position: relative;
+
+
+    left: 440px;
+    position: absolute;
     top: 32px;
     width: 200px;
 }
