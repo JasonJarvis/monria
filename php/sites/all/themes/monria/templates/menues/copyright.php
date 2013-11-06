@@ -1,15 +1,15 @@
 <div id="footer">
     <img width="1000" height="1" style="margin-bottom: 20px"
-         src="<?php echo path_to_theme(); ?>/img/logos/footergradient.jpg">
+         src="/<?php echo path_to_theme(); ?>/img/logos/footergradient.jpg">
 
     <a target="_blank" href="http://www.mindark.com">
         <img width="115" height="35" style="display:inline;"
-             src="<?php echo path_to_theme(); ?>/img/logos/mindark_footer_logo.jpg" alt="">
+             src="/<?php echo path_to_theme(); ?>/img/logos/mindark_footer_logo.jpg" alt="">
     </a>
     <img width="155" height="35" style="display:inline;"
-         src="<?php echo path_to_theme(); ?>/img/logos/monria.jpg" alt="">
+         src="/<?php echo path_to_theme(); ?>/img/logos/monria.jpg" alt="">
     <img width="155" height="35" style="display:inline;"
-         src="<?php echo path_to_theme(); ?>/img/logos/eu_footer_logo.jpg" alt="">
+         src="/<?php echo path_to_theme(); ?>/img/logos/eu_footer_logo.jpg" alt="">
 
     <br> <br>
             <span id="legal-links">
