@@ -19,7 +19,11 @@ function monria_preprocess_page(&$vars) {
 function  monria_preprocess(&$variables) {
     $variables['code'] = 'affimoon130401';
     if(isset($_GET['code'])) {
+
         $variables['code'] = filter_input(INPUT_GET, 'code');
+        $_SESSION['code']= $variables['code'] ;
+    } elseif(isset($_SESSION['code'])) {
+        $variables['code'] = $_SESSION['code'];
     }
 
 }
