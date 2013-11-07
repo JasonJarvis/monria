@@ -19,7 +19,10 @@
     <div class="content">
         <div id="repeater-offset"></div>
         <div class="reposition monria">
-            <?php print render($page['content']); ?>
+            <?php
+                $html = render($page['content']);
+
+            print str_replace(':reference:',$code,$html)?>
         </div>
     </div>
 
