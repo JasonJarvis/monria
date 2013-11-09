@@ -16,17 +16,47 @@ function monria_preprocess_page(&$vars) {
    }
 }
 
+function verify_session_timeout()
+{
+	if (!isset($_SESSION['CREATED'])) {
+		$_SESSION['CREATED'] = time();
+	} else if (time() - $_SESSION['CREATED'] > 1800) {
+		// session started more than 30 minutes ago
+		session_regenerate_id(true);    // change session ID for the current session an invalidate old session ID
+		$_SESSION['CREATED'] = time();  // update creation time
+	}
+}
+
 function  monria_preprocess(&$variables) {
+	verify_session_timeout();
     $variables['code'] = 'affimoon130401';
     if(isset($_GET['code'])) {
-
-        $variables['code'] = filter_input(INPUT_GET, 'code');
-        $_SESSION['code']= $variables['code'] ;
+		$validCodes = array('affimoon130401','affimoon130501', 'affimoon130502', 'affimoon130503', 'affimoon130504', 'affimoon130505');
+		if(in_array($_GET['code'],$validCodes) )
+		{
+			$variables['code'] = filter_input(INPUT_GET, 'code');
+			//$variables['code'] = $_GET['code'];
+			$_SESSION['code']= $variables['code'] ;
+		}
     } elseif(isset($_SESSION['code'])) {
         $variables['code'] = $_SESSION['code'];
     }
-
 }
+// $_GET['code'] = "affimoon1305031";
+// $variables = array("foo" => "bar", "bar" => "foo",);
+// monria_preprocess($variables);
+// Print($variables['code']);
+
+// function  monria_preprocess(&$variables) {
+    // $variables['code'] = 'affimoon130401';
+    // if(isset($_GET['code'])) {
+
+        // $variables['code'] = filter_input(INPUT_GET, 'code');
+        // $_SESSION['code']= $variables['code'] ;
+    // } elseif(isset($_SESSION['code'])) {
+        // $variables['code'] = $_SESSION['code'];
+    // }
+// }
 
 function monria_preprocess_html(&$vars) {
     switch(arg(0)) {
