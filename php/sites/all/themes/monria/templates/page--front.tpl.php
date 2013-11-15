@@ -1,4 +1,11 @@
 <script src="<?php print $base_path . path_to_theme(); ?>/js/video.js"></script>
+<style>
+    #site_map
+    {
+        left:129px ;
+        top: 155px ;
+    }
+</style>
 <div id="task_bar" >
     <a href="https://www.facebook.com/monriathegame" target="_blank" alt="Monria Facebook" title="Monria Facebook"> <div id="facebook"></div></a>
     <a href="https://www.youtube.com/monriathegame" target="_blank" alt="Monria Youtube" title="Monria Youtube"><div id="youtube"></div></a>
@@ -8,12 +15,9 @@
 <div class="gamecontent_reposition">
 
     <div class="navigation">
-
         <div class="bar">
             <?php include('menues/menu.php'); ?>
-
         </div>
-
     </div>
     <div class="bg1">
         <div id="flashContent" >
@@ -53,8 +57,9 @@
             </div>
 
         </div>
-
-        <?php include('menues/copyright.php'); ?>
-
+        <div class="bottom">
+            <?php include('menues/sitemap.php'); ?>
+            <?php include('menues/copyright.php'); ?>
+        </div>
     </div>
 </div>
