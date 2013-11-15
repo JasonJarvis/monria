@@ -64,7 +64,7 @@
 
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes; ?>>
-
+<?php include('menues/top_menu.php'); ?>
 <?php if ($skip_link_text && $skip_link_anchor): ?>
     <p id="skip-link">
         <a href="#<?php print $skip_link_anchor; ?>"
