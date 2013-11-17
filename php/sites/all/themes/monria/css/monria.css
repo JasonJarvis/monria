@@ -88,7 +88,7 @@ body {
     position: absolute;
     text-align: center;
     text-decoration: none;
-    top: 32px;
+    top: -2px;
 }
 .navigation .bar a:hover {
     background: url("../img/menu/menu.png") no-repeat scroll 0 0;
