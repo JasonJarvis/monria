@@ -118,7 +118,8 @@
     background-position: 0 -160px;
 }
 .service-welcome {
-    padding: 0 15px 7px;
+    padding: 0 15px 0px;
+    font-size:14px;
 }
 .service-welcome .employee {
     background: url("../images/icons/employee.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
