@@ -1,15 +1,15 @@
 <div id="service">
     <ul class="service-bar">
         <li class="service-cell service-home">
-            <a href="http://monria.com/" tabindex="50" accessKey="1" title="Battle.net Home"
-               data-action="Battle.net Home">&nbsp;</a>
+            <a href="http://monria.com/" tabindex="50" accessKey="1" title="Monria Home"
+               data-action="Monria Home">&nbsp;</a>
         </li>
         <li class="service-cell service-welcome">
-            <a href="https://account.entropiauniverse.com/account/my-account/my-items/?ccode=affimoon130401" onclick="return Login.open()">Log in</a>
+            <a href="https://account.entropiauniverse.com/account/my-account/my-items/?ccode=<?php echo $code; ?>" onclick="return Login.open()">Log in</a>
             or
-            <a href="https://account.entropiauniverse.com/new-account/?ccode=affimoon130401">Create an Account</a>
+            <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>">Create an Account</a>
         </li>
-        <li class="service-cell service-shop">
+        <li class="service-cell service-shop" style="display:none">
             <a href="" class="service-link" data-action="Shop">Shop</a>
         </li>
 
@@ -22,32 +22,32 @@
                 <div class="support-primary">
                     <ul class="support-nav">
                         <li>
-                            <a href="http://eu.battle.net/support/" tabindex="55" class="support-category"
-                               id="support-nav-kb" data-action="Support - Knowledge Center">
+                            <a href="https://account.entropiauniverse.com/support-faq/in-game-issues/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                               id="support-nav-kb" data-action="Support Cases">
                                 <strong class="support-caption">Support Cases</strong>
 
                             </a>
                         </li>
                         <li>
-                            <a href="https://account.entropiauniverse.com/support-faq/in-game-issues/?ccode=affimoon130401" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Support - Your Support Tickets">
+                            <a href="https://account.entropiauniverse.com/support-faq/in-game-issues/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                               id="support-nav-tickets" data-action="In-world FAQ">
                                 <strong class="support-caption">In-world FAQ</strong>
                                </a>
                         </li>
                         <li>
-                            <a href="https://account.entropiauniverse.com/support-faq/technical-issues-1/?ccode=affimoon130401" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Support - Your Support Tickets">
+                            <a href="https://account.entropiauniverse.com/support-faq/technical-issues-1/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                               id="support-nav-tickets" data-action="Technical Support">
                                 <strong class="support-caption">Technical Support</strong>
                             </a>
                         </li>
                         <li>
-                            <a href="https://account.entropiauniverse.com/support-faq/forgotreset-password/?ccode=affimoon130401" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Support - Your Support Tickets">
+                            <a href="https://account.entropiauniverse.com/support-faq/forgotreset-password/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                               id="support-nav-tickets" data-action="Password Retrieval">
                                 <strong class="support-caption">Password Retrieval</strong>
                             </a>
                         </li>   <li>
-                            <a href="www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=affimoon130401" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Support - Your Support Tickets">
+                            <a href="www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                               id="support-nav-tickets" data-action="Video tutorials">
                                 <strong class="support-caption">Video tutorials</strong>
                             </a>
                         </li>
