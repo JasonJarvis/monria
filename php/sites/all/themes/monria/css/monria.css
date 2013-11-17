@@ -346,7 +346,7 @@ body {
 #twitter:hover {
     background-position: -138px -224px;
 }
-.top_register, .top_download, .card_left, .card_middle, .card_right {
+.top_register, .top_play, .top_download, .card_left, .card_middle, .card_right {
     border-image-width: 31px 31px 31px 31px;
     height: 232px;
     opacity: 0;
@@ -362,6 +362,24 @@ body {
     background: url("../img/btn/flash-hover-down.png") repeat scroll 0 0;
     left: -505px;
     top: 40px;
+}
+.top_play {
+    background: url("../img/btn/flash-hover-top.png") repeat scroll 0 0;
+    height: 166px;
+    left: -186px;
+    top: 12px;
+    width: 376px;
+}
+.top_play_text {
+    position: absolute;
+    background: url("../img/btn/play-now.png") repeat scroll 0 0;
+    height: 37px;
+    left: -134px;
+    position: absolute;
+    top: 85px;
+    width: 273px;
+    z-index: 1;
+
 }
 .card_left {
     background: url("../img/btn/hovers.png") repeat scroll 5px 168px;

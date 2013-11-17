@@ -22,8 +22,9 @@
     <div class="bg1">
         <div id="flashContent" >
             <div id="flashBox">
-                <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" class="top_register"></a>
-                <a href="<?php echo base_path(); ?>download/?ccode=<?php echo $code; ?>" class="top_download"></a>
+
+                <a href="<?php echo base_path(); ?>play" class="top_play"></a>
+                <div class="top_play_text"></div>
                 <?php include('menues/boxes.php'); ?>
 
                 <div id="video_container">
