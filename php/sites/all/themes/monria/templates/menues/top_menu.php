@@ -46,7 +46,7 @@
                                 <strong class="support-caption">Password Retrieval</strong>
                             </a>
                         </li>   <li>
-                            <a href="https://www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                            <a href="http://www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
                                id="support-nav-tickets" data-action="Video tutorials">
                                 <strong class="support-caption">Video tutorials</strong>
                             </a>
