@@ -22,7 +22,7 @@
                 <div class="support-primary">
                     <ul class="support-nav">
                         <li>
-                            <a href="https://account.entropiauniverse.com/support-faq/in-game-issues/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                            <a href="https://account.entropiauniverse.com/support-faq/contact/my-support-cases/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
                                id="support-nav-kb" data-action="Support Cases">
                                 <strong class="support-caption">Support Cases</strong>
 
@@ -46,7 +46,7 @@
                                 <strong class="support-caption">Password Retrieval</strong>
                             </a>
                         </li>   <li>
-                            <a href="www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
+                            <a href="https://www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
                                id="support-nav-tickets" data-action="Video tutorials">
                                 <strong class="support-caption">Video tutorials</strong>
                             </a>
