@@ -74,8 +74,12 @@ $(function () {
     );
 
 
+  $('.service-support').hover(function(){
 
-
+        $( ".support-menu").stop(true,true).delay(300 ).fadeIn();
+    },function(){
+        $( ".support-menu").stop(true,true).delay( 300 ).fadeOut();
+    });
 });
 
 
