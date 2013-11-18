@@ -13,12 +13,12 @@ body {
     z-index: 10;
 }
 .gamecontent_reposition_inner .navigation {
-    background: url("../img/menu/menu.png") no-repeat scroll center top ;
-    height: 145px;
+    background: url("../img/menu/menu.png") no-repeat scroll center -34px;
+    height: 118px;
     margin: 0;
     padding: 0;
     position: absolute;
-    top: 288px;
+    top: 330px;
     width: 100%;
     z-index: 100;
 }
