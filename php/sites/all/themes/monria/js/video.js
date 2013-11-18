@@ -15,7 +15,7 @@ $(function () {
             sources: {
 
                 'default': {
-
+                    'webm': 'videos/monria.webm',
                     'mp4': 'videos/monria.mp4'
                 }
             }
@@ -59,7 +59,10 @@ var BgVideo = {
         this.sources = this.config.sources;
 // Can Play webm
 
-        if (this.canPlay("video/mp4")) {
+        if (this.canPlay("video/webm")) {
+            this.playFormat = "webm";
+// Can Play mp4
+        } else if (this.canPlay("video/mp4")) {
             this.playFormat = "mp4";
         }
 // bind events to make ui functional
