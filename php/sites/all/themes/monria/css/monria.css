@@ -67,7 +67,7 @@ body {
 }
 .navigation.is-fixed {
     position: fixed;
-    top: -35px;
+    top: 1px;
     z-index: 1000;
 }
 .navigation .bar {
