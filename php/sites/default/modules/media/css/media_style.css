@@ -28,7 +28,6 @@
     position: relative;
     top: -35px;
 }
-
 .gamecontent_reposition_inner .reposition {
     margin-left: 40px !important;
 }
@@ -253,9 +252,15 @@
 }
 
 .overlay-controls .play{
-
+    height: 211px;
+    left: 282px;
+    position: absolute;
+    top: 163px;
+    width: 250px;
     background: url("../img/play.png") no-repeat scroll center center;
+    opacity: 0.35;
 }
 .overlay-controls .play:hover {
+    opacity: 1;
     background: url("../img/play.png") no-repeat scroll center center;
 }
