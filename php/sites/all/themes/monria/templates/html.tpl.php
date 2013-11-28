@@ -17,7 +17,8 @@
         <meta name="HandheldFriendly" content="true">
         <meta name="viewport" content="width=device-width">
     <?php endif; ?>
-
+    <meta name="description" content="Monria is a 3D Cthulhu Mythos MMORPG. Using the advanced, well known CryEngine2 graphic engine, it features beautiful graphics ready to compete with any MMO on the market">
+    <meta name="keywords" content="CryEngine,Cthulhu,Entropia,Lovecraft">
     <meta http-equiv="cleartype" content="on">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible"/>
     <?php print $styles; ?>
