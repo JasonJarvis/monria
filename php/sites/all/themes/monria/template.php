@@ -31,7 +31,7 @@ function  monria_preprocess(&$variables) {
 	verify_session_timeout();
     $variables['code'] = 'affimoon130401';
     if(isset($_GET['code'])) {
-		$validCodes = array('affimoon130401','affimoon130501', 'affimoon130502', 'affimoon130503', 'affimoon130504', 'affimoon130505');
+		$validCodes = array('affimoon130401','affimoon130501', 'affimoon130502', 'affimoon130503', 'affimoon130504', 'affimoon130505', 'affimoon131201', 'affimoon131202', 'affimoon131203', 'affimoon131204', 'affimoon131205');
 		if(in_array($_GET['code'],$validCodes) )
 		{
 			$variables['code'] = filter_input(INPUT_GET, 'code');
