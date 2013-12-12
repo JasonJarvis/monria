@@ -11,7 +11,7 @@
     <div class="footer_list_container">
         <ul>
             <li><span> Media</span></li>
-            <li><a href="<?php echo base_path(); ?>screenshot">Screenshots</a></li>
+            <li><a href="<?php echo base_path(); ?>media">Screenshots</a></li>
             <li><a href="<?php echo base_path(); ?>video">Videos</a></li>
             <li><a href="<?php echo base_path(); ?>story">Story</a></li>
         </ul>
@@ -22,7 +22,7 @@
             <li><a href="<?php echo base_path(); ?>about">About</a></li>
             <li><a href="<?php echo base_path(); ?>">Contact</a></li>
             <li><a href="<?php echo base_path(); ?>guide">Guide</a></li>
-            <li><a href="https://account.entropiauniverse.com/support-faq/?ccode=<?php echo $code; ?>">Support</a></li>
+            <li><a href="https://account.entropiauniverse.com/support-faq/?ccode=<?php echo $code; ?>" onClick="trackOutboundLink(this); return false;">Support</a></li>
         </ul>
     </div>
     <div class="footer_list_container">

@@ -5,9 +5,9 @@
                data-action="Monria Home">&nbsp;</a>
         </li>
         <li class="service-cell service-welcome">
-            <a href="https://account.entropiauniverse.com/account/my-account/my-items/?ccode=<?php echo $code; ?>" onClick="trackOutboundLink(this, 'Outbound Links', 'Support:Log in'); return false;">Log in</a>
+            <a href="https://account.entropiauniverse.com/account/my-account/my-items/?ccode=<?php echo $code; ?>" onClick="trackOutboundLink(this); return false;">Log in</a>
             or
-            <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" onClick="trackOutboundLink(this, 'Outbound Links', 'Support:Create account'); return false;">Create an Account</a>
+            <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" onClick="trackOutboundLink(this); return false;">Create an Account</a>
         </li>
         <li class="service-cell service-shop" style="display:none">
             <a href="" class="service-link" data-action="Shop">Shop</a>
@@ -23,31 +23,31 @@
                     <ul class="support-nav">
                         <li>
                             <a href="https://account.entropiauniverse.com/support-faq/contact/my-support-cases/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
-                               id="support-nav-kb" data-action="Support Cases" onClick="trackOutboundLink(this, 'Outbound Links', 'support:Support cases'); return false;">
+                               onClick="trackOutboundLink(this); return false;">
                                 <strong class="support-caption">Support Cases</strong>
 
                             </a>
                         </li>
                         <li>
                             <a href="https://account.entropiauniverse.com/support-faq/in-game-issues/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="In-world FAQ">
+                               onClick="trackOutboundLink(this); return false;">
                                 <strong class="support-caption">In-world FAQ</strong>
                                </a>
                         </li>
                         <li>
                             <a href="https://account.entropiauniverse.com/support-faq/technical-issues-1/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Technical Support">
+                               onClick="trackOutboundLink(this); return false;">
                                 <strong class="support-caption">Technical Support</strong>
                             </a>
                         </li>
                         <li>
                             <a href="https://account.entropiauniverse.com/support-faq/forgotreset-password/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Password Retrieval">
+                               onClick="trackOutboundLink(this); return false;">
                                 <strong class="support-caption">Password Retrieval</strong>
                             </a>
                         </li>   <li>
                             <a href="http://www.entropiauniverse.com/entropia-universe/beginners-guide/video-tutorials/?ccode=<?php echo $code; ?>" tabindex="55" class="support-category"
-                               id="support-nav-tickets" data-action="Video tutorials">
+                               onClick="trackOutboundLink(this); return false;">
                                 <strong class="support-caption">Video tutorials</strong>
                             </a>
                         </li>

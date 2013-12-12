@@ -64,9 +64,9 @@
     </script>
 
    <script type="text/javascript">
-   function trackOutboundLink(link, category, action) 
+   function trackOutboundLink(link) 
    {
-      try { _gaq.push(['_trackEvent', category , action]); } catch(err){}
+      try { ga('send', 'event', '<?php echo $campaign; ?>', link.href, link.innerHTML); } catch(err){}
       setTimeout(function() { document.location.href = link.href; }, 100);
    }
    </script>

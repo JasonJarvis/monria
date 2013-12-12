@@ -41,6 +41,17 @@ function  monria_preprocess(&$variables) {
     } elseif(isset($_SESSION['code'])) {
         $variables['code'] = $_SESSION['code'];
     }
+
+	$variables['campaign'] = $variables['code'];
+	if(isset($_GET['campaign'])) 
+	{
+		$variables['campaign'] = filter_input(INPUT_GET, 'campaign');
+		$_SESSION['campaign']= $variables['campaign'] ;
+	} elseif(isset($_SESSION['campaign'])) {
+        	$variables['campaign'] = $_SESSION['campaign'];
+	}
+
+
 }
 // $_GET['code'] = "affimoon1305031";
 // $variables = array("foo" => "bar", "bar" => "foo",);

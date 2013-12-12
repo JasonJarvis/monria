@@ -23,7 +23,7 @@
         <div id="flashContent" >
             <div id="flashBox">
 
-                <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" class="top_play"></a>
+                <a href="https://account.entropiauniverse.com/new-account/?ccode=<?php echo $code; ?>" class="top_play" onClick="trackOutboundLink(this); return false;"></a>
                 <div class="top_play_text"></div>
                 <?php include('menues/boxes.php'); ?>
 
