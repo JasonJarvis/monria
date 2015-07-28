@@ -489,3 +489,13 @@ div#footer a:hover {
 text-decoration: underline;
 
 }
+
+#arrow-right {
+    right: 0;
+    top: 40%;
+}
+
+#arrow-left {
+    left: 0;
+    top: 40%;
+}
