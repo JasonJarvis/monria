@@ -168,6 +168,7 @@ body {
     margin-left: -658px;
     overflow: hidden;
     width: 1315px;
+    z-index: 1;
 }
 .content {
     height: 168px;
@@ -390,6 +391,7 @@ body {
     left: -363px;
     top: 488px;
     width: 252px;
+    z-index: 5;
 }
 
 
@@ -420,6 +422,7 @@ body {
     left: -110px;
     top: 469px;
     width: 235px;
+    z-index: 5;
 }
 .card_right {
     background: url("../img/btn/hovers.png") repeat scroll -493px 168px;
@@ -427,6 +430,7 @@ body {
     left: 125px;
     top: 488px;
     width: 252px;
+    z-index: 5;
 }
 .ship_content a {
     background: url("../img/btn/more.png") repeat scroll 0 0;
